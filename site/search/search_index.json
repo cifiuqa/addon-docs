@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome.","text":""},{"location":"docs/","title":"Documentation","text":"<p>hi</p>"},{"location":"examples/","title":"Examples","text":"<p>hi</p>"},{"location":"roblox/","title":"Roblox","text":"<p>hi</p>"}]}
