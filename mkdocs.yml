@@ -14,14 +14,13 @@ theme:
     - navigation.top
   logo: assets/logo.png
 
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/cjHvAwGQY5
+
 extra_css:
   - assets/css/extra.css
-
-nav:
-  - Intro: index.md
-  - Documentation: docs.md
-  - Roblox: roblox.md
-  - Examples: examples.md
 
 markdown_extensions:
   - admonition
