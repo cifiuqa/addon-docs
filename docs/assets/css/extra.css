@@ -1,0 +1,16 @@
+/* docs/assets/css/extra.css */
+
+/* Topbar background */
+.md-header {
+    background-color: #017f7e !important;
+}
+
+/* Topbar links color */
+.md-header nav a {
+    color: #ffffff !important; /* white links for contrast */
+}
+
+/* Optional: hover effect for links */
+.md-header nav a:hover {
+    color: #a0f0f0 !important;
+}
