@@ -47,10 +47,10 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+  - admonition
 plugins:
   - blog:
       blog_dir: blog
-  - admonition
   - search
 
 nav:
