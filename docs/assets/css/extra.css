@@ -1,16 +1,18 @@
-/* docs/assets/css/extra.css */
+:root  > * {
+  --md-primary-fg-color:                #017f7e;
+  --md-primary-fg-color--light:         #017f7e;
+  --md-primary-fg-color--dark:          #017f7e;
 
-/* Topbar background */
-.md-header {
-    background-color: #017f7e !important;
+  --md-accent-fg-color:                 #01ffff;
+  --md-accent-fg-color--transparent:    #01ffff19;
 }
 
-/* Topbar links color */
-.md-header nav a {
-    color: #ffffff !important; /* white links for contrast */
+.requires-ssuh {
+    color: #dda900;
+    cursor: help;
 }
 
-/* Optional: hover effect for links */
-.md-header nav a:hover {
-    color: #a0f0f0 !important;
+.requires-ssuh:hover {
+    filter: brightness(1.2);
+    text-shadow: 0 0 6px #a60;
 }

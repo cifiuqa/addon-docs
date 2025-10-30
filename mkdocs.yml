@@ -1,17 +1,19 @@
-site_name: Improved Addon Documentation | SCP:RP
-site_url: https://cifiuqa.github.io/addon-docs/
+site_name: Better Addon Docs | SCPRP
+site_url: http://cifiuqa.github.io/addon-docs/
 
 theme:
   name: material
   palette:
     scheme: slate
-    primary: blue grey
-    accent: blue
+    primary: custom
+    accent: custom
   features:
     - navigation.sections
     - navigation.expand
     - toc.follow
     - navigation.top
+    - navigation.instant
+    - content.code.copy
   logo: assets/logo.png
   favicon: assets/logo.png
 
@@ -19,16 +21,32 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/cjHvAwGQY5
+      name: The Aquifer
+  generator: false
 
 extra_css:
   - assets/css/extra.css
 
 markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
   - toc:
       permalink: true
+      toc_depth: 3
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+
+copyright: This documentation is made by members of The Aquifer. You can join the server on the right!
