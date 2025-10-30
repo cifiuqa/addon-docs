@@ -24,6 +24,11 @@ Modern LuaU functionality may also be unavailable, as LuaU is an expanded versio
 ## API Reference
 ### Instance Functions
 ---
+
+!!! abstract "Abstract"
+
+    This section of the documentation contains functions for instances i.e. parts and raycast.
+
 #### `f(name: string / instance: Instance)`  
 This function allows you to both find an instance from the map via name or set an instance's parent to the workspace.
 ???+ info "Returns:"
@@ -68,10 +73,49 @@ To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(t
 ### Player Interactions
 ---
 
+!!! abstract "Abstract"
+
+    This section of the documentation is about functions related to players e.g. getting ranks in groups or killing a player.
+
 ### Character
+
+!!! abstract "Abstract"
+
+    Body
+ 
 ### Tool
+
+!!! abstract "Abstract"
+
+    Body
+ 
 ### Team
+
+!!! abstract "Abstract"
+
+    This section of the documentation is for functions related to teams.
+ 
 ### Display
+
+!!! abstract "Abstract"
+
+    Body
+ 
 ### Web
+
+!!! abstract "Abstract"
+
+    Body
+ 
 ### Misc
+
+!!! abstract "Abstract"
+
+    Body
+ 
 ### Events
+
+!!! abstract "Abstract"
+
+    Body
+ 
