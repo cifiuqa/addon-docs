@@ -47,8 +47,10 @@ f(part)
 ??? warning "Warning: Order of parenting"
     If you plan to have a hierarchy of parts made by a script, you may need to set the highest instance's parent first, before setting other instance's parents to avoid their data being automatically discarded.
 ---
-#### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
-This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.
+#### `getTagged(tag: string)` :material-clock:
+{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
+This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.  
+To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(tag: string)` to remove one.
 
 ### Player
 ### Character

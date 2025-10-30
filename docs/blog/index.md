@@ -1,5 +1,5 @@
 ---
-title: API Changes
+title: Changes
 icon: material/update
 ---
 
