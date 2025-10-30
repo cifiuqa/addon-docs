@@ -7,6 +7,12 @@
   --md-accent-fg-color--transparent:    #01ffff19;
 }
 
+.md-tooltip, .md-tooltip__inner {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 6px 10px;
+}
+
 .requires-ssuh {
     color: #dda900;
     cursor: help;
@@ -15,4 +21,16 @@
 .requires-ssuh:hover {
     filter: brightness(1.2);
     text-shadow: 0 0 6px #a60;
+}
+
+.incomplete {
+    color: #7e57c2;
+    vertical-align: middle;
+    cursor: help;
+    transition: color 0.2s ease;
+}
+
+.incomplete:hover {
+    color: #b388ff;
+    transform: scale(1.15);
 }
