@@ -51,6 +51,7 @@ markdown_extensions:
 plugins:
   - blog:
       blog_dir: blog
+      archive: false
   - search
 
 nav:
