@@ -20,3 +20,7 @@ You can find the documentation pages on the left.
 
 `Examples`
 : This contains various code snippets and examples which can help you understand how to use different functions in the addons environment. You can find many more in the [discord server](https://discord.gg/cjHvAwGQY5)!
+
+!!! danger "AI Usage"
+
+    It is heavily recommended to not use ai while scripting because it steals from real programmers and can cause unoptimized code.
