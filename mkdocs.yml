@@ -31,7 +31,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
@@ -41,12 +40,16 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - toc:
-      permalink: true
-      toc_depth: 3
   - footnotes
   - def_list
   - attr_list
   - md_in_html
+plugins:
+  - blog
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - admonition
+  - search
 
 copyright: This documentation is made by members of The Aquifer. You can join the server on the right!
