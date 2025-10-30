@@ -22,11 +22,10 @@ Modern LuaU functionality may also be unavailable, as LuaU is an expanded versio
 
 ---
 ## API Reference
-### Instances
+### Instance Functions
 ---
 #### `f(name: string / instance: Instance)`  
 This function allows you to both find an instance from the map via name or set an instance's parent to the workspace.
-
 ???+ info "Returns:"
     The instance found, or nil if no such instance found. If an instance is supplied then nil is returned.
 ???+ example "Example Usage:"
@@ -49,8 +48,26 @@ This function allows you to both find an instance from the map via name or set a
 #### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
 This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.  
 To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(tag: string)` to remove one.
+???+ info "Returns:"
+    An array of all the instances found with that tag.
+    ??? example
+        ``` { .lua }
+        {
+            PartWithTag: Instance,
+            AnotherPartWithTag: Instance
+        }
+        ```
+???+ example "Example Usage:"
+    ``` { .lua }
+    local parts = getTagged("ExampleTag")
+    for i, part in ipairs(parts) do
+        announce("Found a part!")
+    end
+    ```
+---
+### Player Interactions
+---
 
-### Player
 ### Character
 ### Tool
 ### Team
