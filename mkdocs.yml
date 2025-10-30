@@ -44,12 +44,20 @@ markdown_extensions:
   - def_list
   - attr_list
   - md_in_html
-plugins:
-  - blog
   - toc:
       permalink: true
       toc_depth: 3
+plugins:
+  - blog:
+      blog_dir: blog
   - admonition
   - search
 
+nav:
+  - index.md
+  - docs.md
+  - roblox.md
+  - examples.md
+  - Blog:
+    - blog/index.md
 copyright: This documentation is made by members of The Aquifer. You can join the server on the right!
