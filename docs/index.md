@@ -25,5 +25,5 @@ You can find the documentation pages on the left.
     AI steals *real programmers' works* for its generation and often has overall poor practices.  
     Additionally, you may encounter errors as AI are poor at coding in such environments.  
     It is much better practice to look for real programmer's works or do it yourself, support some coders!
-!!! quote
-    "Mind can create, but machine can only imitate"
+    !!! quote
+        "Mind can create, but machine can only imitate"

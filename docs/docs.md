@@ -22,13 +22,13 @@ Modern LuaU functionality may also be unavailable, as LuaU is an expanded versio
 
 ---
 ## API Reference
-### Instance Functions
+## Instance Functions
 
 !!! abstract "Abstract"
 
     This section of the documentation contains functions for instances i.e. parts or models.
 ---
-#### `f(name: string / instance: Instance)`  
+### `f(name: string / instance: Instance)`  
 This function allows you to both find an instance from the map via name or set an instance's parent to the workspace.
 ???+ info "Returns:"
     `1.` Instance: The instance found, or nil if no such instance found.
@@ -36,6 +36,7 @@ This function allows you to both find an instance from the map via name or set a
 ???+ example "Example Usage:"
     `1.` Find instance from name:  
     ``` { .lua }
+    -- This simply fetches a part named "ExamplePart".
     local part = f("ExamplePart")
     ```
     ??? warning "Warning: One instance"
@@ -45,32 +46,31 @@ This function allows you to both find an instance from the map via name or set a
     `2.` Set instance's parent to workspace:
     ``` { .lua }
     local part = Instance.new("Part")
+    -- This sets the part's parent to the workspace, also making it visible to players.
     f(part)
     ```
     ??? warning "Warning: Order of parenting"
         If you plan to have a hierarchy of parts made by a script, you may need to set the highest instance's parent first, before setting other instance's parents to avoid their data being automatically discarded.
 ---
-#### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
+### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
 This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.  
 To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(tag: string)` to remove one.
 ???+ info "Returns:"
     **Array**: all instances found with specified tag.
-    ??? example
-        ``` { .lua }
-        {
-            PartWithTag: Instance,
-            AnotherPartWithTag: Instance
-        }
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
+    -- Retrieves list of all parts with tag.
     local parts = getTagged("ExampleTag")
-    for i, part in ipairs(parts) do
-        announce("Found a part!")
+    local String = ""
+    for _, part in ipairs(parts) do
+        -- Compiles all part names into a string.
+        String ..= ", "..part.Name
     end
+    -- Then announces this string.
+    announce("Found parts: "..String)
     ```
 ---
-### Player Interactions
+## Player Interactions
 ---
 
 !!! abstract "Abstract"
@@ -78,7 +78,7 @@ To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(t
     This section of the documentation contains functions for player interactions i.e. usernames and gamepasses.
 
 ---
-#### `getPlayers()`
+### `getPlayers()`
 This function allows you to fetch everyone's usernames.
 ???+ info "Returns:"
     **Array**: usernames of all online players.
@@ -91,122 +91,182 @@ This function allows you to fetch everyone's usernames.
         ```
 ???+ example "Example Usage:"
     ``` { .lua }
+    -- Retrieves list of usernames of current players.
     local players = getPlayers()
     for i, plr in ipairs(players) do
+        -- Loops through all users and announces their username.
         announce("Found user: "..plr)
     end
     ```
 ---
-#### `getPlayerScore(username: string)`
+### `getPlayerScore(username: string)`
 This function allows you to get the current amount of points a specific user has.
 ???+ info "Returns:"
     **Number**: the amount of points currently owned.
-    ??? example
-        ``` { .lua }
-        500
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
+    -- Retrieves player's score.
     local points = getPlayerScore("shotpaper7")
     if points >= 500 then
+        -- If the score meets a threshold, "You Win!" is announced.
         announce("You win!")
     end
     ```
 ---
-#### `setPlayerScore((username: string), [score: number = 0])`
+### `setPlayerScore((username: string), [score: number = 0])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
 This function allows you to set the current amount of points for a specific user.
 ???+ example "Example Usage:"
     ``` { .lua }
+    -- Sets a player's score to 1000.
     setPlayerScore("shotpaper7", 1000)
     ```
 ---
-#### `getUserId(username: string)`
+### `getUserId(username: string)`
 This function lets you fetch the user ID from a username.
 ???+ info "Returns:"
     **Number**: the user ID of the specified user.
-    ??? example
-        ``` { .lua }
-        700047577
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
     local userId = getUserId("shotpaper7")
+    -- Announces a player's user ID.
     announce("User ID: "..userId)
     ```
 ---
-#### `ownsGamepass(username: string, id: number)`
+### `ownsGamepass(username: string, id: number)`
 This function allows you to determine if a user has a gamepass or not.
 ???+ info "Returns:"
     **Boolean**: true/false based on if the user has the gamepass.
-    ??? example
-        ``` { .lua }
-        false
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
     if ownsGamepass("shotpaper7", 197234145) then
+        -- Announces a message if the user has the gamepass.
         announce("User has gamepass!")
     end
     ```
 ---
-#### `ownsAsset(username: string, id: number)`
+### `ownsAsset(username: string, id: number)`
 This function allows you to determine if a user has an asset or not.
 ???+ info "Returns:"
     **Boolean**: true/false based on if the user has the asset.
-    ??? example
-        ``` { .lua }
-        false
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
     if ownsAsset("shotpaper7", 14844522007) then
+        -- Announces a message if the user has the asset.
         announce("User has asset!")
     end
     ```
 ---
-#### `getPlayerIsInGroup(username: string, id: number)`
+### `getPlayerIsInGroup(username: string, id: number)`
 This functions allows you to determine if a user is in a group or not.
 ???+ info "Returns:"
     **Boolean**: true/false based on if the user is in the group.
-    ??? example
-        ``` { .lua }
-        false
-        ```
 ???+ example "Example Usage:"
     ``` { .lua }
     if getPlayerIsInGroup("shotpaper7", 32725804) then
+        -- Announces a message if the user is in the group.
         announce("User is in group!")
     end
     ```
 ---
-#### `getPlayerRoleInGroup(username: string, id: number)`
+### `getPlayerRoleInGroup(username: string, id: number)`
 This function allows you to get the role a user has in a specified group.
 ???+ info "Returns:"
     **String**: The role the user has.
-    ??? example
-        ``` { .lua }
-        "Owner"
-        ```
-???+ example "Example Usage"
+???+ example "Example Usage:"
     ``` { .lua }
     if getPlayerRoleInGroup("shotpaper7", 32725804) == "Owner" then
+        -- Announces a message if the user has a specific role in the group.
         announce("User is owner in group!")
     end
     ```
 ---
-### Character
+## Character Interactions
+---
+!!! abstract
+    This section of the documentation contains functions for character interactions i.e. health.
+---
+### `kill(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function allows you to easily kill a player's character.
+???+ example "Example Usage:"
+    ``` { .lua }
+    kill("shotpaper7") -- Kills specified user.
+    ```
+---
+### `damage(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function allows you to damage a player's character by a specified amount.
+???+ note
+    This function supports negative numbers for the amount, meaning you can heal users by a specified amount.
+???+ example "Example Usage:"
+    `1.` (Damage)
+    ``` { .lua }
+    damage("shotpaper7", 50) -- Damages user by 50 HP.
+    ```
+    `2.` (Heal)
+    ``` { .lua }
+    damage("shotpaper7", -50) -- Heals user by 50 HP.
+---
+### `heal(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function allows you to heal a user to full health.
+???+ example "Example Usage:"
+    ``` { .lua }
+    heal("shotpaper7") -- Heals user to max health.
+    ```
+---
+### `getPlayerHealth(username: string)`
+This function allows you to determine how much health a player currently has.
+???+ info "Returns:"
+    **Number**: The amount of health a user has. (Normally between 0-100.)
+???+ example "Example Usage:"
+    ``` { .lua }
+    local health = getPlayerHealth("shotpaper7")
+    if health >= 50 then
+        -- Announces a message if the user has at least 50 health.
+        announce("Health is above 50%!")
+    end
+    ```
+---
+### `setPlayerHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function allows you to set a player's health.
+???+ example "Example Usage:"
+    ``` { .lua }
+    -- Sets users health to 50 HP (by default this would be 50%).
+    setPlayerHealth("shotpaper7", 50)
+    ```
+---
+### `getPlayerMaxHealth(username: string)`
+This function allows you to determine the max amount of health a player can have.
+???+ info "Returns:"
+    **Number**: The max health the player currently has, set by setPlayerMaxHealth() or :maxhealth.
+---
+### `setPlayerMaxHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function allows you to set a player's max health.
+???+ example "Example Usage:"
+    ``` { .lua }
+    -- Allows the user to have up to 150 health, default is 100.
+    setPlayerMaxHealth("shotpaper7", 150)
+    ```
+---
+### `getPlayerPosition(username: string)`
+This function allows you to get the CFrame position of a player's HumanoidRootPart. (In other words, tells you where player is.)
+???+ info "Returns:"
+    **CFrame**: CFrame of the specified user. You can get the position of a CFrame (convert it to Vector3) by using CFrame.Position
+???+ example "Example Usage:"
+    ``` { .lua }
+    local part = f("ExamplePartName")
+    -- Fetches the player's CFrame and multiplies it by another CFrame for relative movement.
+    -- In this case, it would have a CFrame 5 studs in front of the player.
+    position = getPlayerPosition * CFrame.new(0, 0, -5)
+    part.CFrame = position
+    ```
+---
 
-!!! abstract "Abstract"
+## Tool
+---
+!!! abstract
 
     Body
- 
-### Tool
 ---
-!!! abstract "Abstract"
-
-    Body
----
-#### `getPlayerKeycard(username: string)`
+### `getPlayerKeycard(username: string)`
 This function allows you to get the specified player's keycard level.
 ???+ info "Returns:"
     A string to represent keycard level.
@@ -222,33 +282,33 @@ This function allows you to get the specified player's keycard level.
     end
     ```
  
-### Team
+## Team
 
-!!! abstract "Abstract"
+!!! abstract
 
     This section of the documentation is for functions related to teams.
  
-### Display
+## Display
 
-!!! abstract "Abstract"
-
-    Body
- 
-### Web
-
-!!! abstract "Abstract"
+!!! abstract
 
     Body
  
-### Misc
+## Web
 
-!!! abstract "Abstract"
+!!! abstract
 
     Body
  
-### Events
+## Misc
 
-!!! abstract "Abstract"
+!!! abstract
+
+    Body
+ 
+## Events
+
+!!! abstract
 
     Body
  
