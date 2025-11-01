@@ -21,14 +21,13 @@ Modern LuaU functionality may also be unavailable, as LuaU is an expanded versio
     When using "Run Once" in the server addons page, your code may only run for 10 seconds.
 
 ---
-## API Reference
 ## Instance Functions
 
 !!! abstract "Abstract"
 
     This section of the documentation contains functions for instances i.e. parts or models.
 ---
-### `f(name: string / instance: Instance)`  
+### `f(name: string / instance: Instance)` { data-toc-label="f" id="f" }  
 This function allows you to both find an instance from the map via name or set an instance's parent to the workspace.
 ???+ info "Returns:"
     `1.` Instance: The instance found, or nil if no such instance found.
@@ -52,7 +51,7 @@ This function allows you to both find an instance from the map via name or set a
     ??? warning "Warning: Order of parenting"
         If you plan to have a hierarchy of parts made by a script, you may need to set the highest instance's parent first, before setting other instance's parents to avoid their data being automatically discarded.
 ---
-### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." }  
+### `getTagged(tag: string)` :material-clock:{ .incomplete title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map." } { data-toc-label="getTagged" id="getTagged" }  
 This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.  
 To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(tag: string)` to remove one.
 ???+ info "Returns:"
@@ -78,7 +77,7 @@ To add a tag to an instance you can use `:AddTag(tag: string)` and `:RemoveTag(t
     This section of the documentation contains functions for player interactions i.e. usernames and gamepasses.
 
 ---
-### `getPlayers()`
+### `getPlayers()` { data-toc-label="getPlayers" id="getPlayers" }
 This function allows you to fetch everyone's usernames.
 ???+ info "Returns:"
     **Array**: usernames of all online players.
@@ -99,7 +98,7 @@ This function allows you to fetch everyone's usernames.
     end
     ```
 ---
-### `getPlayerScore(username: string)`
+### `getPlayerScore(username: string)` { data-toc-label="getPlayerScore" id="getPlayerScore" }
 This function allows you to get the current amount of points a specific user has.
 ???+ info "Returns:"
     **Number**: the amount of points currently owned.
@@ -113,7 +112,7 @@ This function allows you to get the current amount of points a specific user has
     end
     ```
 ---
-### `setPlayerScore((username: string), [score: number = 0])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `setPlayerScore((username: string), [score: number = 0])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="setPlayerScore" id="setPlayerScore" }
 This function allows you to set the current amount of points for a specific user.
 ???+ example "Example Usage:"
     ``` { .lua }
@@ -121,7 +120,7 @@ This function allows you to set the current amount of points for a specific user
     setPlayerScore("shotpaper7", 1000)
     ```
 ---
-### `getUserId(username: string)`
+### `getUserId(username: string)` { data-toc-label="getUserId" id="getUserId" }
 This function lets you fetch the user ID from a username.
 ???+ info "Returns:"
     **Number**: the user ID of the specified user.
@@ -132,19 +131,7 @@ This function lets you fetch the user ID from a username.
     announce("User ID: "..userId)
     ```
 ---
-### `ownsGamepass(username: string, id: number)`
-This function allows you to determine if a user has a gamepass or not.
-???+ info "Returns:"
-    **Boolean**: true/false based on if the user has the gamepass.
-???+ example "Example Usage:"
-    ``` { .lua }
-    if ownsGamepass("shotpaper7", 197234145) then
-        -- Announces a message if the user has the gamepass.
-        announce("User has gamepass!")
-    end
-    ```
----
-### `ownsAsset(username: string, id: number)`
+### `ownsAsset(username: string, id: number)` { data-toc-label="ownsAsset" id="ownsAsset" }
 This function allows you to determine if a user has an asset or not.
 ???+ info "Returns:"
     **Boolean**: true/false based on if the user has the asset.
@@ -156,7 +143,19 @@ This function allows you to determine if a user has an asset or not.
     end
     ```
 ---
-### `getPlayerIsInGroup(username: string, id: number)`
+### `ownsGamepass(username: string, id: number)` { data-toc-label="ownsGamepass" id="ownsGamepass" }
+This function allows you to determine if a user has a gamepass or not.
+???+ info "Returns:"
+    **Boolean**: true/false based on if the user has the gamepass.
+???+ example "Example Usage:"
+    ``` { .lua }
+    if ownsGamepass("shotpaper7", 197234145) then
+        -- Announces a message if the user has the gamepass.
+        announce("User has gamepass!")
+    end
+    ```
+---
+### `getPlayerIsInGroup(username: string, id: number)` { data-toc-label="getPlayerIsInGroup" id="getPlayerIsInGroup" }
 This functions allows you to determine if a user is in a group or not.
 ???+ info "Returns:"
     **Boolean**: true/false based on if the user is in the group.
@@ -168,7 +167,7 @@ This functions allows you to determine if a user is in a group or not.
     end
     ```
 ---
-### `getPlayerRoleInGroup(username: string, id: number)`
+### `getPlayerRoleInGroup(username: string, id: number)` { data-toc-label="getPlayerRoleInGroup" id="getPlayerRoleInGroup" }
 This function allows you to get the role a user has in a specified group.
 ???+ info "Returns:"
     **String**: The role the user has.
@@ -185,14 +184,14 @@ This function allows you to get the role a user has in a specified group.
 !!! abstract
     This section of the documentation contains functions for character interactions i.e. health.
 ---
-### `kill(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `kill(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="kill" id="kill" }
 This function allows you to easily kill a player's character.
 ???+ example "Example Usage:"
     ``` { .lua }
     kill("shotpaper7") -- Kills specified user.
     ```
 ---
-### `damage(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `damage(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="damage" id="damage" }
 This function allows you to damage a player's character by a specified amount.
 ???+ note
     This function supports negative numbers for the amount, meaning you can heal users by a specified amount.
@@ -205,14 +204,14 @@ This function allows you to damage a player's character by a specified amount.
     ``` { .lua }
     damage("shotpaper7", -50) -- Heals user by 50 HP.
 ---
-### `heal(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `heal(username: string)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="heal" id="heal"}
 This function allows you to heal a user to full health.
 ???+ example "Example Usage:"
     ``` { .lua }
     heal("shotpaper7") -- Heals user to max health.
     ```
 ---
-### `getPlayerHealth(username: string)`
+### `getPlayerHealth(username: string)` { data-toc-label="getPlayerHealth" id="getPlayerHealth" }
 This function allows you to determine how much health a player currently has.
 ???+ info "Returns:"
     **Number**: The amount of health a user has. (Normally between 0-100.)
@@ -225,7 +224,7 @@ This function allows you to determine how much health a player currently has.
     end
     ```
 ---
-### `setPlayerHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `setPlayerHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="setPlayerHealth" id="getPlayerHealth" }
 This function allows you to set a player's health.
 ???+ example "Example Usage:"
     ``` { .lua }
@@ -233,12 +232,12 @@ This function allows you to set a player's health.
     setPlayerHealth("shotpaper7", 50)
     ```
 ---
-### `getPlayerMaxHealth(username: string)`
+### `getPlayerMaxHealth(username: string)` { data-toc-label="getPlayerMaxHealth" id="getPlayerMaxHealth" }
 This function allows you to determine the max amount of health a player can have.
 ???+ info "Returns:"
     **Number**: The max health the player currently has, set by setPlayerMaxHealth() or :maxhealth.
 ---
-### `setPlayerMaxHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `setPlayerMaxHealth(username: string, amount: number)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="setPlayerMaxHealth" id="setPlayerMaxHealth" }
 This function allows you to set a player's max health.
 ???+ example "Example Usage:"
     ``` { .lua }
@@ -246,7 +245,7 @@ This function allows you to set a player's max health.
     setPlayerMaxHealth("shotpaper7", 150)
     ```
 ---
-### `getPlayerPosition(username: string)`
+### `getPlayerPosition(username: string)` { data-toc-label="getPlayerPosition" id="getPlayerPosition" }
 This function allows you to get the CFrame position of a player's HumanoidRootPart. (In other words, tells you where player is.)
 ???+ info "Returns:"
     **CFrame**: CFrame of the specified user. You can get the position of a CFrame (convert it to Vector3) by using CFrame.Position
@@ -259,7 +258,7 @@ This function allows you to get the CFrame position of a player's HumanoidRootPa
     part.CFrame = position
     ```
 ---
-### `setPlayerPosition(username: string, position: Vector3/CFrame)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+### `setPlayerPosition(username: string, position: Vector3/CFrame)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="setPlayerPosition" id="setPlayerPosition" }
 This function lets you set a player's position to a Vector3 or CFrame.
 ???+ example "Example Usage:"
     `1.` Set position via CFrame:
@@ -281,7 +280,7 @@ This function lets you set a player's position to a Vector3 or CFrame.
     ???+ note
         By using CFrame rather than Vector3, you also specify rotation, meaning you can choose whether or not you should set the player's rotation as well.
 ---
-### `playEmote((username: string / target: Instance), id: number, [loop: boolean = false])` :material-alert:{ .buggy title="This function may be hard to understand or give unintended results. Please be cautious." }
+### `playEmote((username: string / target: Instance), id: number, [loop: boolean = false])` :material-alert:{ .buggy title="This function may be hard to understand or give unintended results. Please be cautious." } { data-toc-label="playEmote" id="playEmote" }
 This is a much more complicated function, this allows you to play emotes and animations on rigs and characters.  
 You can choose to set username or target, username would let you animate a player, and target lets you animate rigs.  
 For the target, you can provide a Humanoid, Animator, AnimationController or an instance with a Humanoid as a descendant. This would also allow you to animate custom SCPs and much more.
@@ -307,10 +306,57 @@ For the target, you can provide a Humanoid, Animator, AnimationController or an 
 ## Tool
 ---
 !!! abstract
-
-    Body
+    This section of the documentation contains functions to interact with player tools and guns.
 ---
-### `getPlayerKeycard(username: string)`
+### `getTools(username: string)` { data-toc-label="getTools" id="getTools" }
+This is a function which gives you a list of all the items a player currently has.
+???+ info "Returns:"
+    **Array**: List of all items currently possessed.
+    ??? example
+        ``` { .lua }
+        {
+            "Clipboard",
+            "L4 Keycard"
+        }
+???+ example "Example Usage:"
+    ``` { .lua }
+    -- This simply gets the array of tools.
+    local tools = getTools("shotpaper7")
+    -- This then converts the array into a string, separating each item with ", "
+    local toolString = table.concat(tools, ", ")
+    -- This then shows the string.
+    announce("User has: " .. toolString)
+    ```
+### `giveTool(username: string, (toolName: string / toolInstance: Tool))` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="giveTool" id="giveTool" }
+This function allows you to give a user either a built in SCP:RP tool, or a custom tool (via a Tool instance).
+???+ example "Example Usage:"
+    `1.` SCP:RP Built-in Tool
+    ``` { .lua }
+    giveTool("shotpaper7", "L4 Keycard")
+    ```
+    `2.` Custom Tool
+    ``` { .lua }
+    -- This initiates the main tool instance, this is what roblox uses to handle tools.
+    local tool = Instance.new("Tool")
+    tool.CanBeDropped = false
+    tool.Name = "Custom Tool"
+
+    -- This initiates the handle. This is required for a visible tool.
+    local handle = Instance.new("Part")
+    handle.Name = "Handle"
+    handle.Anchored = true
+    handle.CanCollide = false
+    -- This simply prevents it from being manipulated. The actual handle appears normally.
+    handle.CFrame = CFrame.new(9999, 9999, 9999)
+
+    -- The tool must be parented to workspace, as there is no access to ReplicatedStorage.
+    f(tool)
+    handle.Parent = tool
+
+    -- This finally gives the player the custom tool.
+    giveTool("shotpaper7", tool)
+    ```
+### `getPlayerKeycard(username: string)` { data-toc-label="getPlayerKeycard" id="getPlayerKeycard" }
 This function allows you to get the specified player's keycard level.
 ???+ info "Returns:"
     A string to represent keycard level.

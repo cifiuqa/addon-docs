@@ -26,7 +26,7 @@
 .incomplete {
     color: #7e57c2;
     cursor: help;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .incomplete:hover {
@@ -37,7 +37,7 @@
 .no-return {
     color: #00BFFF;
     cursor: help;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .no-return:hover {
@@ -48,7 +48,7 @@
 .buggy {
     color: #DF9300;
     cursor: help;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .buggy:hover {
