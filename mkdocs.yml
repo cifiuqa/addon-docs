@@ -60,7 +60,10 @@ nav:
   - index.md
   - docs.md
   - roblox.md
+  - limitations.md
   - examples.md
+  - Modules:
+    - modules/index.md
   - Blog:
     - blog/index.md
 copyright: This documentation is made by members of The Aquifer. You can join the server on the right!
