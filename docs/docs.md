@@ -181,6 +181,29 @@ This function allows you to get the role a user has in a specified group.
     end
     ```
 ---
+### `getHost()` { data-toc-label="getHost" id="getHost" }
+This function allows you to get the server host's ID.
+???+ info "Returns:"
+    **Number**: Server Host's user ID.
+???+ example "Example Usage:"
+    ``` lua
+    -- Fun fact this is actually an example from an addon I made!
+    -- This initiates the host variable, pretty simple.
+    local host
+    -- This then loops through all the players in the server.
+    for _, player in ipairs(getPlayers()) do
+        -- Then checks if their user ID matches the host ID.
+        if getUserId(player) == getHost() then
+            -- If they are equal, then they are the same person,
+            -- and host can be set to the server host's username rather than ID.
+            host = player
+            break
+        end
+    end
+    -- Displays a message showing the host's username.
+    announce("Host's username: "..host)
+    ```
+---
 ## Character Interactions
 ---
 !!! abstract
