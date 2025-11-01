@@ -259,6 +259,50 @@ This function allows you to get the CFrame position of a player's HumanoidRootPa
     part.CFrame = position
     ```
 ---
+### `setPlayerPosition(username: string, position: Vector3/CFrame)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." }
+This function lets you set a player's position to a Vector3 or CFrame.
+???+ example "Example Usage:"
+    `1.` Set position via CFrame:
+    ``` { .lua }
+    local part = f("ExamplePartName")
+    -- Fetches the specified part's position (CFrame).
+    local targetCFrame = part.CFrame
+    -- Teleports the player to the part's CFrame.
+    setPlayerPosition("shotpaper7", targetCFrame)
+    ```
+    `2.` Set position via Vector3:
+    ``` { .lua }
+    local part = f("ExamplePartName")
+    -- Fetches the specified part's position (Vector3).
+    local targetPosition = part.Position
+    -- Teleports the player to the part's Position.
+    setPlayerPosition("shotpaper7", targetPosition)
+    ```
+    ???+ note
+        By using CFrame rather than Vector3, you also specify rotation, meaning you can choose whether or not you should set the player's rotation as well.
+---
+### `playEmote((username: string / target: Instance), id: number, [loop: boolean = false])` :material-alert:{ .buggy title="This function may be hard to understand or give unintended results. Please be cautious." }
+This is a much more complicated function, this allows you to play emotes and animations on rigs and characters.  
+You can choose to set username or target, username would let you animate a player, and target lets you animate rigs.  
+For the target, you can provide a Humanoid, Animator, AnimationController or an instance with a Humanoid as a descendant. This would also allow you to animate custom SCPs and much more.
+???+ question
+    To my current knowledge, this function only allows for emotes from the catalog, not custom animations made with the likes of Moon Animator. If you have any further info about this please contact me `@aquific`. Thank you!
+???+ info "Returns:"
+    **Tuple**: Containing:
+    `1.` **Function**: function to stop the emote, simply call it like stopFunction().
+    `2.` **Function**: function to change the speed of the emote, adjustSpeedFunction(1.5).
+???+ example "Example Usage:"
+    `1.` Player animation:
+    ``` { .lua }
+    playEmote("shotpaper7", 138498832987078, true)
+    ```
+    `2.` Rig animation:
+    ``` { .lua }
+    local rig = f("RigName")
+    playEmote(rig, 138498832987078, true)
+    ```
+    ???+ note
+        Using rigs seems to very buggy at the moment. The only reliable method I have found is by unanchoring all parts of the rig except for the HumanoidRootPart, but this may be patched in the future.
 
 ## Tool
 ---

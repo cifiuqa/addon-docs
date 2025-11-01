@@ -26,21 +26,32 @@
 .incomplete {
     color: #7e57c2;
     cursor: help;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .incomplete:hover {
     color: #b388ff;
-    transform: scale(1.15);
+    transform: scale(1.25);
 }
 
 .no-return {
     color: #00BFFF;
     cursor: help;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .no-return:hover {
     color: #46d1ff;
-    transform: scale(1.15);
+    transform: scale(1.25);
+}
+
+.buggy {
+    color: #DF9300;
+    cursor: help;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.buggy:hover {
+    color: #FFBF08;
+    transform: scale(1.25);
 }
