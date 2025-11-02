@@ -585,18 +585,60 @@ This uses a system similar to modAnnounce, however you can select who to show th
     announce("Another Example Announcement")
     ```
 ---
-### `title([username: string = allplayers], message: string, [color: Color3 = (255, 255, 255)], [gradientColor: Color3 = (nil)])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="(sub)title/(sub)sideinfo" id="title" }
+### `title([username: string = allplayers], message: string, [color: Color3 = (255, 255, 255)], [gradientColor: Color3])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="(sub)title/(sub)sideinfo" id="title" }
 This function allows you to display custom text to the user. Each of the functions (subtitle, etc.) position the text differently. The color sets the main color of the text.  
 If the gradient color is not defined then the text is a solid color, otherwise it is a left :material-arrow-right: right gradient of the color :material-arrow-right: gradientColor.
 !!! note
     This function functions the same for `subtitle()`, `sideinfo()` and `subsideinfo()` and therefore they have not been added independently to the docs. You can simply replace the `title` with the other function names for the same result.
-
+???+ example "Example Usage:"
+    ``` lua
+    -- White -> Black subsideinfo for a specific user.
+    subsideinfo("shotpaper7", "Example Text", Color3.new(1, 1, 1), Color3.new(0, 0, 0))
+    -- Default title for all users.
+    title("Example Text")
+    ```
+---
 ## Web
-
+---
 !!! abstract
-
-    Body
- 
+    This is a small section for HTTP related functions.
+---
+### `http(url: string, [method: string = "get"], [headers: Array], [body: string], [compress: Enum.HttpCompression = Enum.HttpCompression.None])` { data-toc-label="http" id="http" }
+Performs an HTTP request with specified arguments.
+???+ note "Returns:"
+    **Dictionary**: A dictionary (type of table) with various pieces of information.
+    ??? example
+        ``` lua
+        {
+            ["Success"]: boolean = true,
+            ["StatusCode"]: number = 200,
+            ["StatusMessage"]: string = "OK",
+            ["Headers"] = {
+                ["Content-Type"] = "application/json; charset=utf-8",
+                ["Date"] = "Sun, 02 Nov 2025 00:43:49 GMT",
+                ["Server"] = "nginx/1.18.0"
+            },
+            ["Body"] = "{"message":"Hello World","id":100}
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Example HTTP call with very basic arguments.
+    local response = http(
+        "https://example.com/api/submit",
+        "post",
+        {
+            ["Content-Type"] = "application/json"
+        },
+        jsonEncode({
+            username = "shotpaper7",
+            score = 67
+        })
+    )
+    -- Converts the response into a json string and displays it.
+    announce(jsonEncode(response))
+    ```
+---
 ## Misc
 
 !!! abstract
