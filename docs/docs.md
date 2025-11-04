@@ -603,9 +603,9 @@ If the gradient color is not defined then the text is a solid color, otherwise i
 !!! abstract
     This is a small section for HTTP related functions.
 ---
-### `http(url: string, [method: string = "get"], [headers: Array], [body: string], [compress: Enum.HttpCompression = Enum.HttpCompression.None])` { data-toc-label="http" id="http" }
-Performs an HTTP request with specified arguments.
-???+ note "Returns:"
+### `http(url: string, [method: string = "get"], [headers: Table], [body: string], [compress: Enum.HttpCompression = Enum.HttpCompression.None])` { data-toc-label="http" id="http" }
+Performs an HTTP request with specified arguments. This is especially useful for connecting with external resources such as Discord. This is the equivalent of HttpService:RequestAsync() in Roblox Studio.
+???+ info "Returns:"
     **Dictionary**: A dictionary (type of table) with various pieces of information.
     ??? example
         ``` lua
@@ -639,12 +639,131 @@ Performs an HTTP request with specified arguments.
     announce(jsonEncode(response))
     ```
 ---
+### `jsonEncode(content: Table)` { data-toc-label="jsonEncode" id="jsonEncode" }
+This makes it easier to convert tables into strings, especially useful for debugging things and HTTP requests. This is the equivalent of HttpService:JSONEncode() in Roblox Studio.
+???+ info "Returns:"
+    **String**: A JSON formatted string which is the equivalent to the provided table. Keys of dictionaries must be strings or numbers. A value of `nil` is NEVER generated.
+    ??? example
+        ``` json
+        {
+            "message": "success",
+            "info": {
+                "points": 123,
+                "isLeader": true,
+                "user": {
+                    "id": 12345,
+                    "name": "JohnDoe"
+                },
+            "past_scores": [50, 42, 95],
+            "best_friend": null
+            }
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Fetch a table, in this case an array of all usernames.
+    local players = getPlayers()
+    -- Display a message with a JSON formatted version of the table.
+    announce(jsonEncode(players))
+    -- This makes it much easier to understand and debug some functions or code.
+    ```
+    See [above](#http) for another example, being used in a HTTP request.
+---
+### `jsonDecode(json: string)` { data-toc-label="jsonDecode id="jsonDecode" }
+This allows you to convert JSON strings back into tables, especially useful for handling HTTP body contents in scripts. This is the equivalent of HttpService:JSONDecode() in Roblox Studio.
+???+ info "Returns:"
+    **Table**: Table version of a JSON string. Empty JSON objects return a table of `{}`.
+    ??? example
+        ``` lua
+        {
+            message = "success",
+            info = {
+                points = 120,
+                isLeader = true,
+                user = {
+                    id = 12345,
+                    name = "JohnDoe"
+                },
+                past_scores = {50, 52, 95},
+                best_friend = nil
+            }
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Example JSON string, such as one received from a HTTP response body.
+    local jsonString = [[
+    {
+        "message": "success",
+        "info": {
+            "points": 120,
+            "isLeader": true,
+            "user": {
+                "id": 12345,
+                "name": "JohnDoe"
+            },
+            "past_scores": [50, 42, 95],
+            "best_friend": null
+        }
+    }
+    ]]
+    -- Convert JSON string to Lua.
+    local data = HttpService:JSONDecode(jsonString)
+
+    -- Initialise string for future reference:
+    local theString = ""
+
+    if data.message == "success" then
+        -- Since tab["hello"] and tab.hello are equivalent,
+        -- you could also use data["info"]["points"] here:
+        theString = theString..("I have " .. data.info.points .. " points").."\n"
+        if data.info.isLeader then
+            theString = theString..("I am the leader").."\n"
+        end
+        theString = theString..("I have " .. #data.info.past_scores .. " past scores").."\n"
+
+        theString = theString..("All the information:").."\n"
+        for key, value in pairs(data.info) do
+            theString = theString..(key, typeof(value), value).."\n"
+        end
+        
+        announce(theString)
+    end
+    ```
+    ###### (admittedly this is bad practice with the string, fight me.)
+---
 ## Misc
-
+---
 !!! abstract
+    This section contains functions which were deemed not to fit into other categories.
+---
+### `tween(instance: Instance, tweenInfo: TweenInfo, propertyTable: table)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="tween" id="tween" }
+This is a simple handler to help you gradually move one thing to another, e.g. a part's position.
+For more information on tweens I HEAVILY recommend you look at some YouTube tutorials and this [Roblox Studio documentation](https://create.roblox.com/docs/reference/engine/classes/TweenService#Create).
+???+ example "Example Usage:"
+    ``` lua
+    local part = f("ExamplePart")
+    
+    local goal = {
+        Position = Vector3.new(0, 10, 0),
+        Color = Color3.fromRGB(255, 0, 0)
+    }
 
-    Body
- 
+    local tweenInfo = TweenInfo.new(
+        1, -- time
+        Enum.EasingStyle.Sine, -- easing style (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)
+        Enum.EasingDirection.InOut -- easing direction (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)
+        0, -- repeat count, set as -1 for infinite repetition.
+        false, -- reverses, false is recommended.
+        0 -- delay time, 0 will likely give you the results you intend.
+    )
+
+    tween(part, tweenInfo, goal)
+    ```
+---
+### `raycast(origin: Vector3, target: Vector3, params: RaycastParams)` { data-toc-label="raycast" id="raycast" }
+This is a relatively advanced function for simply sending a beam between 2 parts and determining if it collides with anything.
+---
 ## Events
 
 !!! abstract
