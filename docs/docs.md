@@ -739,7 +739,7 @@ This allows you to convert JSON strings back into tables, especially useful for 
 ---
 ### `tween(instance: Instance, tweenInfo: TweenInfo, propertyTable: table)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="tween" id="tween" }
 This is a simple handler to help you gradually move one thing to another, e.g. a part's position.
-For more information on tweens I HEAVILY recommend you look at some YouTube tutorials and this [Roblox Studio documentation](https://create.roblox.com/docs/reference/engine/classes/TweenService#Create).
+For more information on tweens, I HEAVILY recommend you look at some YouTube tutorials and this [Roblox Engine API Documentation](https://create.roblox.com/docs/reference/engine/classes/TweenService#Create).
 ???+ example "Example Usage:"
     ``` lua
     local part = f("ExamplePart")
@@ -762,7 +762,9 @@ For more information on tweens I HEAVILY recommend you look at some YouTube tuto
     ```
 ---
 ### `raycast(origin: Vector3, target: Vector3, params: RaycastParams)` { data-toc-label="raycast" id="raycast" }
-This is a relatively advanced function for simply sending a beam between 2 parts and determining if it collides with anything.
+This is a relatively advanced function for sending a beam between 2 parts and determining if it collides with anything.
+For more information on raycasts, I HEAVILY recommend you look at some Youtube tutorials and this [Roblox Engine API Documentation](https://create.roblox.com/docs/workspace/raycasting).
+???+ info "Returns:"
 ---
 ## Events
 
