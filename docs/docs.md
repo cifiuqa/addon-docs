@@ -181,6 +181,29 @@ This function allows you to get the role a user has in a specified group.
     end
     ```
 ---
+### `getHost()` { data-toc-label="getHost" id="getHost" }
+This function allows you to get the server host's ID.
+???+ info "Returns:"
+    **Number**: Server Host's user ID.
+???+ example "Example Usage:"
+    ``` lua
+    -- Fun fact this is actually an example from an addon I made!
+    -- This initiates the host variable, pretty simple.
+    local host
+    -- This then loops through all the players in the server.
+    for _, player in ipairs(getPlayers()) do
+        -- Then checks if their user ID matches the host ID.
+        if getUserId(player) == getHost() then
+            -- If they are equal, then they are the same person,
+            -- and host can be set to the server host's username rather than ID.
+            host = player
+            break
+        end
+    end
+    -- Displays a message showing the host's username.
+    announce("Host's username: "..host)
+    ```
+---
 ## Character Interactions
 ---
 !!! abstract
@@ -562,24 +585,187 @@ This uses a system similar to modAnnounce, however you can select who to show th
     announce("Another Example Announcement")
     ```
 ---
-### `title([username: string = allplayers], message: string, [color: Color3 = (255, 255, 255)], [gradientColor: Color3 = (nil)])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="(sub)title/(sub)sideinfo" id="title" }
+### `title([username: string = allplayers], message: string, [color: Color3 = (255, 255, 255)], [gradientColor: Color3])` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="(sub)title/(sub)sideinfo" id="title" }
 This function allows you to display custom text to the user. Each of the functions (subtitle, etc.) position the text differently. The color sets the main color of the text.  
 If the gradient color is not defined then the text is a solid color, otherwise it is a left :material-arrow-right: right gradient of the color :material-arrow-right: gradientColor.
 !!! note
     This function functions the same for `subtitle()`, `sideinfo()` and `subsideinfo()` and therefore they have not been added independently to the docs. You can simply replace the `title` with the other function names for the same result.
-
+???+ example "Example Usage:"
+    ``` lua
+    -- White -> Black subsideinfo for a specific user.
+    subsideinfo("shotpaper7", "Example Text", Color3.new(1, 1, 1), Color3.new(0, 0, 0))
+    -- Default title for all users.
+    title("Example Text")
+    ```
+---
 ## Web
-
+---
 !!! abstract
+    This is a small section for HTTP related functions.
+---
+### `http(url: string, [method: string = "get"], [headers: Table], [body: string], [compress: Enum.HttpCompression = Enum.HttpCompression.None])` { data-toc-label="http" id="http" }
+Performs an HTTP request with specified arguments. This is especially useful for connecting with external resources such as Discord. This is the equivalent of HttpService:RequestAsync() in Roblox Studio.
+???+ info "Returns:"
+    **Dictionary**: A dictionary (type of table) with various pieces of information.
+    ??? example
+        ``` lua
+        {
+            ["Success"]: boolean = true,
+            ["StatusCode"]: number = 200,
+            ["StatusMessage"]: string = "OK",
+            ["Headers"] = {
+                ["Content-Type"] = "application/json; charset=utf-8",
+                ["Date"] = "Sun, 02 Nov 2025 00:43:49 GMT",
+                ["Server"] = "nginx/1.18.0"
+            },
+            ["Body"] = "{"message":"Hello World","id":100}
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Example HTTP call with very basic arguments.
+    local response = http(
+        "https://example.com/api/submit",
+        "post",
+        {
+            ["Content-Type"] = "application/json"
+        },
+        jsonEncode({
+            username = "shotpaper7",
+            score = 67
+        })
+    )
+    -- Converts the response into a json string and displays it.
+    announce(jsonEncode(response))
+    ```
+---
+### `jsonEncode(content: Table)` { data-toc-label="jsonEncode" id="jsonEncode" }
+This makes it easier to convert tables into strings, especially useful for debugging things and HTTP requests. This is the equivalent of HttpService:JSONEncode() in Roblox Studio.
+???+ info "Returns:"
+    **String**: A JSON formatted string which is the equivalent to the provided table. Keys of dictionaries must be strings or numbers. A value of `nil` is NEVER generated.
+    ??? example
+        ``` json
+        {
+            "message": "success",
+            "info": {
+                "points": 123,
+                "isLeader": true,
+                "user": {
+                    "id": 12345,
+                    "name": "JohnDoe"
+                },
+            "past_scores": [50, 42, 95],
+            "best_friend": null
+            }
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Fetch a table, in this case an array of all usernames.
+    local players = getPlayers()
+    -- Display a message with a JSON formatted version of the table.
+    announce(jsonEncode(players))
+    -- This makes it much easier to understand and debug some functions or code.
+    ```
+    See [above](#http) for another example, being used in a HTTP request.
+---
+### `jsonDecode(json: string)` { data-toc-label="jsonDecode id="jsonDecode" }
+This allows you to convert JSON strings back into tables, especially useful for handling HTTP body contents in scripts. This is the equivalent of HttpService:JSONDecode() in Roblox Studio.
+???+ info "Returns:"
+    **Table**: Table version of a JSON string. Empty JSON objects return a table of `{}`.
+    ??? example
+        ``` lua
+        {
+            message = "success",
+            info = {
+                points = 120,
+                isLeader = true,
+                user = {
+                    id = 12345,
+                    name = "JohnDoe"
+                },
+                past_scores = {50, 52, 95},
+                best_friend = nil
+            }
+        }
+        ```
+???+ example "Example Usage:"
+    ``` lua
+    -- Example JSON string, such as one received from a HTTP response body.
+    local jsonString = [[
+    {
+        "message": "success",
+        "info": {
+            "points": 120,
+            "isLeader": true,
+            "user": {
+                "id": 12345,
+                "name": "JohnDoe"
+            },
+            "past_scores": [50, 42, 95],
+            "best_friend": null
+        }
+    }
+    ]]
+    -- Convert JSON string to Lua.
+    local data = HttpService:JSONDecode(jsonString)
 
-    Body
- 
+    -- Initialise string for future reference:
+    local theString = ""
+
+    if data.message == "success" then
+        -- Since tab["hello"] and tab.hello are equivalent,
+        -- you could also use data["info"]["points"] here:
+        theString = theString..("I have " .. data.info.points .. " points").."\n"
+        if data.info.isLeader then
+            theString = theString..("I am the leader").."\n"
+        end
+        theString = theString..("I have " .. #data.info.past_scores .. " past scores").."\n"
+
+        theString = theString..("All the information:").."\n"
+        for key, value in pairs(data.info) do
+            theString = theString..(key, typeof(value), value).."\n"
+        end
+        
+        announce(theString)
+    end
+    ```
+    ###### (admittedly this is bad practice with the string, fight me.)
+---
 ## Misc
-
+---
 !!! abstract
+    This section contains functions which were deemed not to fit into other categories.
+---
+### `tween(instance: Instance, tweenInfo: TweenInfo, propertyTable: table)` :material-keyboard-return:{ .no-return title="This function returns nothing, therefore any attempts to get a return will give nil." } { data-toc-label="tween" id="tween" }
+This is a simple handler to help you gradually move one thing to another, e.g. a part's position.
+For more information on tweens, I HEAVILY recommend you look at some YouTube tutorials and this [Roblox Engine API Documentation](https://create.roblox.com/docs/reference/engine/classes/TweenService#Create).
+???+ example "Example Usage:"
+    ``` lua
+    local part = f("ExamplePart")
+    
+    local goal = {
+        Position = Vector3.new(0, 10, 0),
+        Color = Color3.fromRGB(255, 0, 0)
+    }
 
-    Body
- 
+    local tweenInfo = TweenInfo.new(
+        1, -- time
+        Enum.EasingStyle.Sine, -- easing style (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)
+        Enum.EasingDirection.InOut -- easing direction (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)
+        0, -- repeat count, set as -1 for infinite repetition.
+        false, -- reverses, false is recommended.
+        0 -- delay time, 0 will likely give you the results you intend.
+    )
+
+    tween(part, tweenInfo, goal)
+    ```
+---
+### `raycast(origin: Vector3, target: Vector3, params: RaycastParams)` { data-toc-label="raycast" id="raycast" }
+This is a relatively advanced function for sending a beam between 2 parts and determining if it collides with anything.
+For more information on raycasts, I HEAVILY recommend you look at some Youtube tutorials and this [Roblox Engine API Documentation](https://create.roblox.com/docs/workspace/raycasting).
+???+ info "Returns:"
+---
 ## Events
 
 !!! abstract
