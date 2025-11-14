@@ -669,7 +669,7 @@ This makes it easier to convert tables into strings, especially useful for debug
     ```
     See [above](#http) for another example, being used in a HTTP request.
 ---
-### `jsonDecode(json: string)` { data-toc-label="jsonDecode id="jsonDecode" }
+### `jsonDecode(json: string)` { data-toc-label="jsonDecode" id="jsonDecode" }
 This allows you to convert JSON strings back into tables, especially useful for handling HTTP body contents in scripts. This is the equivalent of HttpService:JSONDecode() in Roblox Studio.
 ???+ info "Returns:"
     **Table**: Table version of a JSON string. Empty JSON objects return a table of `{}`.
@@ -762,7 +762,7 @@ For more information on tweens, I HEAVILY recommend you look at some YouTube tut
     ```
 ---
 ### `raycast(origin: Vector3, target: Vector3, params: RaycastParams)` { data-toc-label="raycast" id="raycast" }
-This is a relatively advanced function for sending a beam between 2 parts and determining if it collides with anything.
+This is a relatively advanced function for sending a beam between 2 positions and determining if it collides with anything.
 For more information on raycasts, I HEAVILY recommend you look at some Youtube tutorials and this [Roblox Engine API Documentation](https://create.roblox.com/docs/workspace/raycasting).
 ???+ info "Returns:"
 ---
