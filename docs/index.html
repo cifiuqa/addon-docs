@@ -1,0 +1,3106 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://cifiuqa.github.io/addon-docs/docs/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../roblox/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Documentation - Better Addon Docs | SCPRP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#main-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Better Addon Docs | SCPRP" class="md-header__button md-logo" aria-label="Better Addon Docs | SCPRP" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Better Addon Docs | SCPRP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Better Addon Docs | SCPRP" class="md-nav__button md-logo" aria-label="Better Addon Docs | SCPRP" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Better Addon Docs | SCPRP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 17c0 3.31-2.69 6-6 6v-1.5c2.5 0 4.5-2 4.5-4.5zM1 7c0-3.31 2.69-6 6-6v1.5c-2.5 0-4.5 2-4.5 4.5zm7-2.68-4.59 4.6c-3.22 3.22-3.22 8.45 0 11.67s8.45 3.22 11.67 0l7.07-7.09c.49-.47.49-1.26 0-1.75a1.25 1.25 0 0 0-1.77 0l-4.42 4.42-.71-.71 6.54-6.54c.49-.49.49-1.28 0-1.77s-1.29-.49-1.79 0L14.19 13l-.69-.73 6.87-6.89c.49-.49.49-1.28 0-1.77s-1.28-.49-1.77 0l-6.89 6.89-.71-.7 5.5-5.48c.5-.49.5-1.28 0-1.77s-1.28-.49-1.77 0l-7.62 7.62a4 4 0 0 1-.33 5.28l-.71-.71a3 3 0 0 0 0-4.24l-.35-.35 4.07-4.07c.49-.49.49-1.28 0-1.77-.5-.48-1.29-.48-1.79.01"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        f
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTagged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTagged
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player Interactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getPlayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerScore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerScore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerScore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerScore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getUserId" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUserId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ownsAsset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownsAsset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ownsGamepass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownsGamepass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerIsInGroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerIsInGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerRoleInGroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerRoleInGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getHost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getHost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character Interactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        damage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        heal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerMaxHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerMaxHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerMaxHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerMaxHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerPosition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerPosition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playEmote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        playEmote
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerKeycard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerKeycard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giveTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        giveTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        removeTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hasTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerCurrentTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerCurrentTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunMagSize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunMagSize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunAddBullets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunAddBullets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunAmmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunAmmo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isGun" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isGun
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Team
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getTeams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTeamMembers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeamMembers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setTeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setTeam
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#announce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        announce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (sub)title/(sub)sideinfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        http
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonEncode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        jsonEncode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonDecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        jsonDecode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Misc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tween
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        raycast
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roblox/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.936 15.356-12.11-3.244L0 18.93 18.928 24l2.68-9.99-6.818-1.83zM5.072 0 2.394 9.992l6.816 1.83.854-3.178 12.11 3.246L24 5.072z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Roblox Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../limitations/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0a12 12 0 0 1 12 12 12 12 0 0 1-12 12A12 12 0 0 1 0 12 12 12 0 0 1 12 0m0 2A10 10 0 0 0 2 12c0 2.4.85 4.6 2.26 6.33L18.33 4.26A10 10 0 0 0 12 2m0 20a10 10 0 0 0 10-10c0-2.4-.85-4.6-2.26-6.33L5.67 19.74A10 10 0 0 0 12 22"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 8H3V6h18M9 13h12v-2H9m0 7h12v-2H9"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instance-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instance Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instance Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        f
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTagged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTagged
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Player Interactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getPlayers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerScore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerScore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerScore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerScore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getUserId" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUserId
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ownsAsset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownsAsset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ownsGamepass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ownsGamepass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerIsInGroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerIsInGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerRoleInGroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerRoleInGroup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getHost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getHost
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Character Interactions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Character Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        kill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        damage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        heal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerMaxHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerMaxHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerMaxHealth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerMaxHealth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerPosition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setPlayerPosition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setPlayerPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playEmote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        playEmote
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerKeycard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerKeycard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giveTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        giveTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        removeTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hasTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getPlayerCurrentTool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPlayerCurrentTool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunMagSize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunMagSize
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunAddBullets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunAddBullets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gunAmmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gunAmmo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isGun" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isGun
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Team
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getTeams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTeamMembers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeamMembers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getTeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTeam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setTeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setTeam
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#announce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        announce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (sub)title/(sub)sideinfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        http
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonEncode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        jsonEncode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsonDecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        jsonDecode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Misc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tween
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        raycast
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="main-documentation">Main Documentation<a class="headerlink" href="#main-documentation" title="Permanent link">&para;</a></h1>
+<hr />
+<p>Server Addons are a great environment within SCP:RP custom servers for lots of customisable server functionality.<br />
+Addons use Lua script, so it is heavily recommended you get a basic grasp of how lua works and are comfortable with it.<br />
+This page should help you understand all the different functions provided for you, to help you interact with the server.</p>
+<p><strong>Some functions have symbols next to them to let you know about limitations, such as requiring an online SSUH.</strong></p>
+<hr />
+<h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<p>Server addons use a sandboxed version of Lua 5. This means that many typical things you may be able to do in Roblox normally (such as accessing services like Players or accessing player's characters) may not be possible with the current system.<br />
+Modern LuaU functionality may also be unavailable, as LuaU is an expanded version of Lua. However, there is support for some operations such as +=, -=, *=, /= and ..= .  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Functions that display messages to players undergo filtering and only function while the server host is in the server.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When using "Run Once" in the server addons page, your code may only run for 10 seconds.</p>
+</div>
+<hr />
+<h2 id="instance-functions">Instance Functions<a class="headerlink" href="#instance-functions" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section of the documentation contains functions for instances i.e. parts or models.</p>
+</div>
+<hr />
+<h3 id="f"><code>f(name: string / instance: Instance)</code><a class="headerlink" href="#f" title="Permanent link">&para;</a></h3>
+<p>This function allows you to both find an instance from the map via name or set an instance's parent to the workspace.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><code>1.</code> Instance: The instance found, or nil if no such instance found.
+<code>2.</code> nil: If an instance is supplied then nil is returned.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><code>1.</code> Find instance from name:<br />
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">-- This simply fetches a part named &quot;ExamplePart&quot;.</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;ExamplePart&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<details class="warning">
+<summary>Warning: One instance</summary>
+<p>When using f(), it will only return one instance, similar to the behaviour of :FindFirstChild().</p>
+</details>
+<details class="note">
+<summary>Note: Searches all descendants</summary>
+<p>f() will look for the instance beyond just the workspace, but all of its descendants, so even a part inside of a model would be found.</p>
+</details>
+<p><code>2.</code> Set instance's parent to workspace:
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Instance</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Part&quot;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">-- This sets the part&#39;s parent to the workspace, also making it visible to players.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nf">f</span><span class="p">(</span><span class="nv">part</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<details class="warning">
+<summary>Warning: Order of parenting</summary>
+<p>If you plan to have a hierarchy of parts made by a script, you may need to set the highest instance's parent first, before setting other instance's parents to avoid their data being automatically discarded.</p>
+</details>
+</details>
+<hr />
+<h3 id="getTagged"><code>getTagged(tag: string)</code> <span class="twemoji incomplete" title="This function cannot be used yet. This particular function is not in the game yet, additionally tags do not save when saving a map."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span><a class="headerlink" href="#getTagged" title="Permanent link">&para;</a></h3>
+<p>This function allows you get an array with all the instances with a certain tag. A tag is a way of simply categorising instances.<br />
+To add a tag to an instance you can use <code>:AddTag(tag: string)</code> and <code>:RemoveTag(tag: string)</code> to remove one.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>This function is in the default documentation but cannot be used in-game yet. If you have any information which is not already displayed here, please let us know!</p>
+</details>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Array</strong>: all instances found with specified tag.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">-- Retrieves list of all parts with tag.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getTagged</span><span class="p">(</span><span class="s2">&quot;ExampleTag&quot;</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">parts</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="c1">-- Compiles all part names into a string.</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="nv">String</span><span class="w"> </span><span class="o">..=</span><span class="w"> </span><span class="s2">&quot;, &quot;</span><span class="o">..</span><span class="nv">part</span><span class="p">.</span><span class="py">Name</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="kr">end</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="c1">-- Then announces this string.</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Found parts: &quot;</span><span class="o">..</span><span class="nv">String</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h2 id="player-interactions">Player Interactions<a class="headerlink" href="#player-interactions" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section of the documentation contains functions for player interactions i.e. usernames and gamepasses.</p>
+</div>
+<hr />
+<h3 id="getPlayers"><code>getPlayers()</code><a class="headerlink" href="#getPlayers" title="Permanent link">&para;</a></h3>
+<p>This function allows you to fetch everyone's usernames.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Array</strong>: usernames of all online players.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="s2">&quot;MetalTableIndex&quot;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">-- Retrieves list of usernames of current players.</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">players</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayers</span><span class="p">()</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="p">,</span><span class="w"> </span><span class="nv">plr</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">players</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="c1">-- Loops through all users and announces their username.</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Found user: &quot;</span><span class="o">..</span><span class="nv">plr</span><span class="p">)</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerScore"><code>getPlayerScore(username: string)</code><a class="headerlink" href="#getPlayerScore" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get the current amount of points a specific user has.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: the amount of points currently owned.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span>
+<span class="normal"><a href="#__codelineno-5-4">4</a></span>
+<span class="normal"><a href="#__codelineno-5-5">5</a></span>
+<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">-- Retrieves player&#39;s score.</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayerScore</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kr">if</span><span class="w"> </span><span class="nv">points</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="c1">-- If the score meets a threshold, &quot;You Win!&quot; is announced.</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;You win!&quot;</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="setPlayerScore"><code>setPlayerScore((username: string), [score: number = 0])</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#setPlayerScore" title="Permanent link">&para;</a></h3>
+<p>This function allows you to set the current amount of points for a specific user.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">-- Sets a player&#39;s score to 1000.</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nf">setPlayerScore</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getUserId"><code>getUserId(username: string)</code><a class="headerlink" href="#getUserId" title="Permanent link">&para;</a></h3>
+<p>This function lets you fetch the user ID from a username.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: the user ID of the specified user.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getUserId</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="c1">-- Announces a player&#39;s user ID.</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User ID: &quot;</span><span class="o">..</span><span class="nv">userId</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="ownsAsset"><code>ownsAsset(username: string, id: number)</code><a class="headerlink" href="#ownsAsset" title="Permanent link">&para;</a></h3>
+<p>This function allows you to determine if a user has an asset or not.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Boolean</strong>: true/false based on if the user has the asset.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kr">if</span><span class="w"> </span><span class="nf">ownsAsset</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">14844522007</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="c1">-- Announces a message if the user has the asset.</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has asset!&quot;</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="ownsGamepass"><code>ownsGamepass(username: string, id: number)</code><a class="headerlink" href="#ownsGamepass" title="Permanent link">&para;</a></h3>
+<p>This function allows you to determine if a user has a gamepass or not.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Boolean</strong>: true/false based on if the user has the gamepass.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span>
+<span class="normal"><a href="#__codelineno-9-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kr">if</span><span class="w"> </span><span class="nf">ownsGamepass</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">197234145</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">    </span><span class="c1">-- Announces a message if the user has the gamepass.</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has gamepass!&quot;</span><span class="p">)</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerIsInGroup"><code>getPlayerIsInGroup(username: string, id: number)</code><a class="headerlink" href="#getPlayerIsInGroup" title="Permanent link">&para;</a></h3>
+<p>This functions allows you to determine if a user is in a group or not.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Boolean</strong>: true/false based on if the user is in the group.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kr">if</span><span class="w"> </span><span class="nf">getPlayerIsInGroup</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">32725804</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="c1">-- Announces a message if the user is in the group.</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User is in group!&quot;</span><span class="p">)</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerRoleInGroup"><code>getPlayerRoleInGroup(username: string, id: number)</code><a class="headerlink" href="#getPlayerRoleInGroup" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get the role a user has in a specified group.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>String</strong>: The role the user has.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kr">if</span><span class="w"> </span><span class="nf">getPlayerRoleInGroup</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">32725804</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Owner&quot;</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">    </span><span class="c1">-- Announces a message if the user has a specific role in the group.</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User is owner in group!&quot;</span><span class="p">)</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getHost"><code>getHost()</code><a class="headerlink" href="#getHost" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get the server host's ID.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: Server Host's user ID.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c1">-- Fun fact this is actually an example from an addon I made!</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="c1">-- This initiates the host variable, pretty simple.</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">host</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="c1">-- This then loops through all the players in the server.</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">player</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nf">getPlayers</span><span class="p">())</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">    </span><span class="c1">-- Then checks if their user ID matches the host ID.</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nf">getUserId</span><span class="p">(</span><span class="nv">player</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nf">getHost</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">        </span><span class="c1">-- If they are equal, then they are the same person,</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="w">        </span><span class="c1">-- and host can be set to the server host&#39;s username rather than ID.</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">        </span><span class="nv">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">player</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="w">        </span><span class="kr">break</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">    </span><span class="kr">end</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="kr">end</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="c1">-- Displays a message showing the host&#39;s username.</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Host&#39;s username: &quot;</span><span class="o">..</span><span class="nv">host</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h2 id="character-interactions">Character Interactions<a class="headerlink" href="#character-interactions" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section of the documentation contains functions for character interactions i.e. health.</p>
+</div>
+<hr />
+<h3 id="kill"><code>kill(username: string)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#kill" title="Permanent link">&para;</a></h3>
+<p>This function allows you to easily kill a player's character.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="nf">kill</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Kills specified user.</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="damage"><code>damage(username: string, amount: number)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#damage" title="Permanent link">&para;</a></h3>
+<p>This function allows you to damage a player's character by a specified amount.</p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>This function supports negative numbers for the amount, meaning you can heal users by a specified amount.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><code>1.</code> (Damage)
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="nf">damage</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Damages user by 50 HP.</span>
+</span></code></pre></div></td></tr></table></div>
+<code>2.</code> (Heal)
+``` lua
+damage("shotpaper7", -50) -- Heals user by 50 HP.</p>
+</details>
+<hr />
+<h3 id="heal"><code>heal(username: string)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#heal" title="Permanent link">&para;</a></h3>
+<p>This function allows you to heal a user to full health.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nf">heal</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Heals user to max health.</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerHealth"><code>getPlayerHealth(username: string)</code><a class="headerlink" href="#getPlayerHealth" title="Permanent link">&para;</a></h3>
+<p>This function allows you to determine how much health a player currently has.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: The amount of health a user has. (Normally between 0-100.)</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span>
+<span class="normal"><a href="#__codelineno-16-4">4</a></span>
+<span class="normal"><a href="#__codelineno-16-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">health</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayerHealth</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="kr">if</span><span class="w"> </span><span class="nv">health</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">50</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">    </span><span class="c1">-- Announces a message if the user has at least 50 health.</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Health is above 50%!&quot;</span><span class="p">)</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerHealth"><code>setPlayerHealth(username: string, amount: number)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#getPlayerHealth" title="Permanent link">&para;</a></h3>
+<p>This function allows you to set a player's health.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1">-- Sets users health to 50 HP (by default this would be 50%).</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nf">setPlayerHealth</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerMaxHealth"><code>getPlayerMaxHealth(username: string)</code><a class="headerlink" href="#getPlayerMaxHealth" title="Permanent link">&para;</a></h3>
+<p>This function allows you to determine the max amount of health a player can have.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: The max health the player currently has, set by setPlayerMaxHealth() or :maxhealth.</p>
+</details>
+<hr />
+<h3 id="setPlayerMaxHealth"><code>setPlayerMaxHealth(username: string, amount: number)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#setPlayerMaxHealth" title="Permanent link">&para;</a></h3>
+<p>This function allows you to set a player's max health.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1">-- Allows the user to have up to 150 health, default is 100.</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="nf">setPlayerMaxHealth</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">150</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerPosition"><code>getPlayerPosition(username: string)</code><a class="headerlink" href="#getPlayerPosition" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get the CFrame position of a player's HumanoidRootPart. (In other words, tells you where player is.)</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>CFrame</strong>: CFrame of the specified user. You can get the position of a CFrame (convert it to Vector3) by using CFrame.Position</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;ExamplePartName&quot;</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="c1">-- Fetches the player&#39;s CFrame and multiplies it by another CFrame for relative movement.</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="c1">-- In this case, it would have a CFrame 5 studs in front of the player.</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="nv">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">getPlayerPosition</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nv">CFrame</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="nv">part</span><span class="p">.</span><span class="py">CFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">position</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="setPlayerPosition"><code>setPlayerPosition(username: string, position: Vector3/CFrame)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#setPlayerPosition" title="Permanent link">&para;</a></h3>
+<p>This function lets you set a player's position to a Vector3 or CFrame.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><code>1.</code> Set position via CFrame:
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span>
+<span class="normal"><a href="#__codelineno-20-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;ExamplePartName&quot;</span><span class="p">)</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="c1">-- Fetches the specified part&#39;s position (CFrame).</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">targetCFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">part</span><span class="p">.</span><span class="py">CFrame</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="c1">-- Teleports the player to the part&#39;s CFrame.</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="nf">setPlayerPosition</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">targetCFrame</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<code>2.</code> Set position via Vector3:
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;ExamplePartName&quot;</span><span class="p">)</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="c1">-- Fetches the specified part&#39;s position (Vector3).</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">targetPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">part</span><span class="p">.</span><span class="py">Position</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="c1">-- Teleports the player to the part&#39;s Position.</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5"></a><span class="nf">setPlayerPosition</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">targetPosition</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>By using CFrame rather than Vector3, you also specify rotation, meaning you can choose whether or not you should set the player's rotation as well.</p>
+</details>
+</details>
+<hr />
+<h3 id="playEmote"><code>playEmote((username: string / target: Instance), id: number, [loop: boolean = false])</code> <span class="twemoji buggy" title="This function may be hard to understand or give unintended results. Please be cautious."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2z"/></svg></span><a class="headerlink" href="#playEmote" title="Permanent link">&para;</a></h3>
+<p>This is a much more complicated function, this allows you to play emotes and animations on rigs and characters.<br />
+You can choose to set username or target, username would let you animate a player, and target lets you animate rigs.<br />
+For the target, you can provide a Humanoid, Animator, AnimationController or an instance with a Humanoid as a descendant. This would also allow you to animate custom SCPs and much more.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>To my current knowledge, this function only allows for emotes from the catalog, not custom animations made with the likes of Moon Animator. If you have any further info about this please contact me <code>@aquific</code>. Thank you!</p>
+</details>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Tuple</strong>: Containing:
+<code>1.</code> <strong>Function</strong>: function to stop the emote, simply call it like stopFunction().
+<code>2.</code> <strong>Function</strong>: function to change the speed of the emote, adjustSpeedFunction(1.5).</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><code>1.</code> Player animation:
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="nf">playEmote</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">138498832987078</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<code>2.</code> Rig animation:
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">rig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;RigName&quot;</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="nf">playEmote</span><span class="p">(</span><span class="nv">rig</span><span class="p">,</span><span class="w"> </span><span class="mi">138498832987078</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>Using rigs seems to very buggy at the moment. The only reliable method I have found is by unanchoring all parts of the rig except for the HumanoidRootPart, but this may be patched in the future.</p>
+</details>
+</details>
+<h2 id="tool">Tool<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section of the documentation contains functions to interact with player tools and guns.</p>
+</div>
+<hr />
+<h3 id="getPlayerKeycard"><code>getPlayerKeycard(username: string)</code><a class="headerlink" href="#getPlayerKeycard" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get the specified player's keycard level.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p>A string to represent keycard level.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="s2">&quot;L4&quot;</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1">1</a></span>
+<span class="normal"><a href="#__codelineno-25-2">2</a></span>
+<span class="normal"><a href="#__codelineno-25-3">3</a></span>
+<span class="normal"><a href="#__codelineno-25-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">keycardLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayerKeycard</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="kr">if</span><span class="w"> </span><span class="nv">keycardLevel</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;O5&quot;</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has an O5 keycard!&quot;</span><span class="p">)</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getTools"><code>getTools(username: string)</code><a class="headerlink" href="#getTools" title="Permanent link">&para;</a></h3>
+<p>This is a function which gives you a list of all the items a player currently has.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Array</strong>: List of all items currently possessed.</p>
+<details class="example">
+<summary>Example</summary>
+<p>``` lua
+{
+    "Clipboard",
+    "L4 Keycard"
+}</p>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span>
+<span class="normal"><a href="#__codelineno-26-3">3</a></span>
+<span class="normal"><a href="#__codelineno-26-4">4</a></span>
+<span class="normal"><a href="#__codelineno-26-5">5</a></span>
+<span class="normal"><a href="#__codelineno-26-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="c1">-- This simply gets the array of tools.</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">tools</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getTools</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="c1">-- This then converts the array into a string, separating each item with &quot;, &quot;</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">toolString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">table.concat</span><span class="p">(</span><span class="nv">tools</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;, &quot;</span><span class="p">)</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="c1">-- This then shows the string.</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has: &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">toolString</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="giveTool"><code>giveTool(username: string, (toolName: string / toolInstance: Tool))</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#giveTool" title="Permanent link">&para;</a></h3>
+<p>This function allows you to give a user either a built in SCP:RP tool, or a custom tool (via a Tool instance).</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><code>1.</code> SCP:RP Built-in Tool
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="nf">giveTool</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;L4 Keycard&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<code>2.</code> Custom Tool
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-28-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-28-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-28-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-28-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-28-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-28-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-28-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-28-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-28-10">10</a></span>
+<span class="normal"><a href="#__codelineno-28-11">11</a></span>
+<span class="normal"><a href="#__codelineno-28-12">12</a></span>
+<span class="normal"><a href="#__codelineno-28-13">13</a></span>
+<span class="normal"><a href="#__codelineno-28-14">14</a></span>
+<span class="normal"><a href="#__codelineno-28-15">15</a></span>
+<span class="normal"><a href="#__codelineno-28-16">16</a></span>
+<span class="normal"><a href="#__codelineno-28-17">17</a></span>
+<span class="normal"><a href="#__codelineno-28-18">18</a></span>
+<span class="normal"><a href="#__codelineno-28-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="c1">-- This initiates the main tool instance, this is what roblox uses to handle tools.</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Instance</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Tool&quot;</span><span class="p">)</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="nv">tool</span><span class="p">.</span><span class="py">CanBeDropped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="nv">tool</span><span class="p">.</span><span class="py">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Custom Tool&quot;</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5"></a>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6"></a><span class="c1">-- This initiates the handle. This is required for a visible tool.</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7"></a><span class="kd">local</span><span class="w"> </span><span class="nv">handle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Instance</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Part&quot;</span><span class="p">)</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8"></a><span class="nv">handle</span><span class="p">.</span><span class="py">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Handle&quot;</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9"></a><span class="nv">handle</span><span class="p">.</span><span class="py">Anchored</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10"></a><span class="nv">handle</span><span class="p">.</span><span class="py">CanCollide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11"></a><span class="c1">-- This simply prevents it from being manipulated. The actual handle appears normally.</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12"></a><span class="nv">handle</span><span class="p">.</span><span class="py">CFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">CFrame</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">9999</span><span class="p">,</span><span class="w"> </span><span class="mi">9999</span><span class="p">,</span><span class="w"> </span><span class="mi">9999</span><span class="p">)</span>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13"></a>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14"></a><span class="c1">-- The tool must be parented to workspace, as there is no access to ReplicatedStorage.</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15"></a><span class="nf">f</span><span class="p">(</span><span class="nv">tool</span><span class="p">)</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16"></a><span class="nv">handle</span><span class="p">.</span><span class="py">Parent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">tool</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17"></a>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18"></a><span class="c1">-- This finally gives the player the custom tool.</span>
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19"></a><span class="nf">giveTool</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">tool</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 id="removeTool"><code>removeTool(username: string, toolName: string)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#removeTool" title="Permanent link">&para;</a></h3>
+<p>This function removes the first found tool from a player with the specified name. This works similarly to doing Player.Backpack:FindFirstChild(toolName):Destroy() in Roblox Studio.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="c1">-- Removes the first found tool called Custom Tool.</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2"></a><span class="nf">removeTool</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Custom Tool&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="hasTool"><code>hasTool(username: string, toolName: string)</code><a class="headerlink" href="#hasTool" title="Permanent link">&para;</a></h3>
+<p>This allows you to determine whether or not a player has a specific tool.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Boolean</strong>: true if a tool with such name is found, false if a tool with such name is not found.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span>
+<span class="normal"><a href="#__codelineno-30-3">3</a></span>
+<span class="normal"><a href="#__codelineno-30-4">4</a></span>
+<span class="normal"><a href="#__codelineno-30-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="c1">-- Checks if user has the specified tool.</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2"></a><span class="kr">if</span><span class="w"> </span><span class="nf">hasTool</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Custom Tool&quot;</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3"></a><span class="w">    </span><span class="c1">-- Announces a message if the tool is found.</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has a tool!&quot;</span><span class="p">)</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getPlayerCurrentTool"><code>getPlayerCurrentTool(username: string)</code><a class="headerlink" href="#getPlayerCurrentTool" title="Permanent link">&para;</a></h3>
+<p>Allows you to determine what tool a user is currently holding.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>String</strong> or <strong>nil</strong>: This will return the name of the currently held tool, if they are not holding a tool, returns nil.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span>
+<span class="normal"><a href="#__codelineno-31-5">5</a></span>
+<span class="normal"><a href="#__codelineno-31-6">6</a></span>
+<span class="normal"><a href="#__codelineno-31-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="c1">-- Grabs the current held tool.</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayerCurrentTool</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3"></a><span class="c1">-- Checks the characters after the 3rd to see if they say &quot;Keycard&quot;.</span>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4"></a><span class="kr">if</span><span class="w"> </span><span class="nb">string.sub</span><span class="p">(</span><span class="nv">tool</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Keycard&quot;</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-31-5"><a id="__codelineno-31-5" name="__codelineno-31-5"></a><span class="w">    </span><span class="c1">-- Displays a message if it does.</span>
+</span><span id="__span-31-6"><a id="__codelineno-31-6" name="__codelineno-31-6"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Holding a keycard!&quot;</span><span class="p">)</span>
+</span><span id="__span-31-7"><a id="__codelineno-31-7" name="__codelineno-31-7"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="gunMagSize"><code>gunMagSize(gun: string)</code> <span class="twemoji incomplete" title="This function cannot be used yet. This particular function is not in the game yet."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span><a class="headerlink" href="#gunMagSize" title="Permanent link">&para;</a></h3>
+<p>This lets you determine the total mag size a specific gun can have. Note that this is NOT player-based, and is just a generic gun function.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>This function is in the default documentation but cannot be used in-game yet. If you have any information which is not already displayed here, please let us know!</p>
+</details>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: The total mag size, e.g. Pistol returns 17.</p>
+</details>
+<details class="example annotate" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1">1</a></span>
+<span class="normal"><a href="#__codelineno-32-2">2</a></span>
+<span class="normal"><a href="#__codelineno-32-3">3</a></span>
+<span class="normal"><a href="#__codelineno-32-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="c1">-- Determine the amount of ammo in a magazine for a Pistol.</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">magSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">gunMagSize</span><span class="p">(</span><span class="s2">&quot;Pistol&quot;</span><span class="p">)</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a><span class="c1">-- Add the amount of bullets from a magazine to the gun for the player.</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4"></a><span class="nf">gunAddBullets</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Pistol&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">magSize</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="gunAddBullets"><code>gunAddBullets(username: string, gun: string, amount: number)</code> <span class="twemoji incomplete" title="This function cannot be used yet. This particular function is not in the game yet."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#gunAddBullets" title="Permanent link">&para;</a></h3>
+<p>This function allows you to add bullets to a specific player's gun.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>This function is in the default documentation but cannot be used in-game yet. If you have any information which is not already displayed here, please let us know!</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1">1</a></span>
+<span class="normal"><a href="#__codelineno-33-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="c1">-- Simply adds 10 bullets to the player&#39;s pistol.</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="nf">gunAddBullets</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Pistol&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="gunAmmo"><code>gunAmmo(username: string, gun: string, [mag: boolean = false])</code> <span class="twemoji incomplete" title="This function cannot be used yet. This particular function is not in the game yet."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span><a class="headerlink" href="#gunAmmo" title="Permanent link">&para;</a></h3>
+<p>This function lets you determine how much ammo currently in a player's gun.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>This function is in the default documentation but cannot be used in-game yet. If you have any information which is not already displayed here, please let us know!</p>
+</details>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Number</strong>: The amount of ammo in the gun (including spare mags, UNLESS mag = true in the function).</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1">1</a></span>
+<span class="normal"><a href="#__codelineno-34-2">2</a></span>
+<span class="normal"><a href="#__codelineno-34-3">3</a></span>
+<span class="normal"><a href="#__codelineno-34-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="c1">-- Fetches the total amount of ammo in the player&#39;s pistol.</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ammo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">gunAmmo</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Pistol&quot;</span><span class="p">)</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="c1">-- Displays a message showing the amount of ammo.</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;User has &quot;</span><span class="o">..</span><span class="nv">ammo</span><span class="o">..</span><span class="s2">&quot; bullets for their pistol.&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="isGun"><code>isGun(toolName: string)</code> <span class="twemoji incomplete" title="This function cannot be used yet. This particular function is not in the game yet."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span><a class="headerlink" href="#isGun" title="Permanent link">&para;</a></h3>
+<p>This determines whether or not a specified tool is a gun, or a different type of tool.</p>
+<details class="question" open="open">
+<summary>Question</summary>
+<p>This function is in the default documentation but cannot be used in-game yet. If you have any information which is not already displayed here, please let us know!</p>
+</details>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Boolean</strong>: true if tool is a gun, false if not.</p>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span>
+<span class="normal"><a href="#__codelineno-35-4">4</a></span>
+<span class="normal"><a href="#__codelineno-35-5">5</a></span>
+<span class="normal"><a href="#__codelineno-35-6">6</a></span>
+<span class="normal"><a href="#__codelineno-35-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">tool</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Clipboard&quot;</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2"></a><span class="c1">-- Checks if the tool is a gun.</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3"></a><span class="kr">if</span><span class="w"> </span><span class="nf">isGun</span><span class="p">(</span><span class="nv">tool</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4"></a><span class="w">    </span><span class="c1">-- Announces message based on result.</span>
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Specified tool is a gun!&quot;</span><span class="p">)</span>
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6"></a><span class="kr">else</span>
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Specified tool is not a gun.&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h2 id="team">Team<a class="headerlink" href="#team" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section of the documentation is for functions related to teams. e.g. setting a player's team.</p>
+</div>
+<hr />
+<h3 id="getTeams"><code>getTeams()</code><a class="headerlink" href="#getTeams" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get a list of all teams currently enabled in the map.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Array</strong>: All found teams. Teams are stored as arrays again, with their name and color.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-36-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-36-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-36-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-36-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-36-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-36-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-36-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-36-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-36-10">10</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="p">{</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3"></a><span class="w">        </span><span class="s2">&quot;Class-D&quot;</span><span class="p">,</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4"></a><span class="w">        </span><span class="nv">BrickColor</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">106</span><span class="p">)</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7"></a><span class="w">        </span><span class="s2">&quot;Security Department&quot;</span><span class="p">,</span>
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8"></a><span class="w">        </span><span class="nv">BrickColor</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">194</span><span class="p">)</span>
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
+<span class="normal"><a href="#__codelineno-37-2">2</a></span>
+<span class="normal"><a href="#__codelineno-37-3">3</a></span>
+<span class="normal"><a href="#__codelineno-37-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="c1">-- Retrieves the first team&#39;s info from the list.</span>
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">firstTeam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getTeams</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3"></a><span class="c1">-- Displays the info for the first team.</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Name: &quot;</span><span class="o">..</span><span class="nv">firstTeam</span><span class="p">[</span><span class="mi">1</span><span class="p">]..</span><span class="s2">&quot;, Color: &quot;</span><span class="o">..</span><span class="nv">firstTeam</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getTeamMembers"><code>getTeamMembers(teamName: string / teamColor: BrickColor)</code><a class="headerlink" href="#getTeamMembers" title="Permanent link">&para;</a></h3>
+<p>This function allows you to get a list of all players currently in a specified team.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Array</strong> All found players' usernames from the team.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1">1</a></span>
+<span class="normal"><a href="#__codelineno-38-2">2</a></span>
+<span class="normal"><a href="#__codelineno-38-3">3</a></span>
+<span class="normal"><a href="#__codelineno-38-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="p">{</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2"></a><span class="w">    </span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3"></a><span class="w">    </span><span class="s2">&quot;metaltableindex&quot;</span>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span>
+<span class="normal"><a href="#__codelineno-39-3">3</a></span>
+<span class="normal"><a href="#__codelineno-39-4">4</a></span>
+<span class="normal"><a href="#__codelineno-39-5">5</a></span>
+<span class="normal"><a href="#__codelineno-39-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="c1">-- Fetch all users of team</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">plrs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getTeamMembers</span><span class="p">(</span><span class="s2">&quot;Class-D&quot;</span><span class="p">)</span>
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3"></a><span class="c1">-- Give every </span>
+</span><span id="__span-39-4"><a id="__codelineno-39-4" name="__codelineno-39-4"></a><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="w"> </span><span class="nv">plr</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">plrs</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-39-5"><a id="__codelineno-39-5" name="__codelineno-39-5"></a><span class="w">    </span><span class="nf">giveTool</span><span class="p">(</span><span class="nv">plr</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ACR&quot;</span><span class="p">)</span>
+</span><span id="__span-39-6"><a id="__codelineno-39-6" name="__codelineno-39-6"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="getTeam"><code>getTeam(username: string)</code><a class="headerlink" href="#getTeam" title="Permanent link">&para;</a></h3>
+<p>This lets you fetch the team of a specified player.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Tuple</strong>: Team's name and color.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-40-1">1</a></span>
+<span class="normal"><a href="#__codelineno-40-2">2</a></span>
+<span class="normal"><a href="#__codelineno-40-3">3</a></span>
+<span class="normal"><a href="#__codelineno-40-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="p">(</span>
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2"></a><span class="w">    </span><span class="s2">&quot;Class-D&quot;</span><span class="p">,</span>
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3"></a><span class="w">    </span><span class="nv">Enum</span><span class="p">.</span><span class="py">BrickColor</span><span class="p">.</span><span class="py">BrightOrange</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4"></a><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-41-1">1</a></span>
+<span class="normal"><a href="#__codelineno-41-2">2</a></span>
+<span class="normal"><a href="#__codelineno-41-3">3</a></span>
+<span class="normal"><a href="#__codelineno-41-4">4</a></span>
+<span class="normal"><a href="#__codelineno-41-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="c1">-- Get the player&#39;s team&#39;s name.</span>
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">teamName</span><span class="p">,</span><span class="w"> </span><span class="nv">teamColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getTeam</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">)</span>
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3"></a><span class="kr">if</span><span class="w"> </span><span class="nv">teamName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;Class-D&quot;</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4"></a><span class="w">    </span><span class="c1">-- Display a message if the team&#39;s name matches &quot;Class-D&quot;.</span>
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Player is a Class-D!&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="setTeam"><code>setTeam(username: string, (teamName: string / teamColor: BrickColor))</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#setTeam" title="Permanent link">&para;</a></h3>
+<p>This lets you set a specified player's team.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-42-1">1</a></span>
+<span class="normal"><a href="#__codelineno-42-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="c1">-- Sets players team to Class-D</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2"></a><span class="nf">setTeam</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Class-D&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h2 id="display">Display<a class="headerlink" href="#display" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section contains functions related to displaying messages/information to users.</p>
+</div>
+<hr />
+<h3 id="announce"><code>announce([username: string = allplayers], message: string, [blue: boolean = false])</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#announce" title="Permanent link">&para;</a></h3>
+<p>This uses a system similar to modAnnounce, however you can select who to show this announcement to, and you can choose for the announcement to show in red or blue.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-43-1">1</a></span>
+<span class="normal"><a href="#__codelineno-43-2">2</a></span>
+<span class="normal"><a href="#__codelineno-43-3">3</a></span>
+<span class="normal"><a href="#__codelineno-43-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="c1">-- Blue announcement shown to specific player.</span>
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Example Announcement&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3"></a><span class="c1">-- Red announcement shown to all players.</span>
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4"></a><span class="nf">announce</span><span class="p">(</span><span class="s2">&quot;Another Example Announcement&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="title"><code>title([username: string = allplayers], message: string, [color: Color3 = (255, 255, 255)], [gradientColor: Color3])</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#title" title="Permanent link">&para;</a></h3>
+<p>This function allows you to display custom text to the user. Each of the functions (subtitle, etc.) position the text differently. The color sets the main color of the text.<br />
+If the gradient color is not defined then the text is a solid color, otherwise it is a left <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> right gradient of the color <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> gradientColor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function functions the same for <code>subtitle()</code>, <code>sideinfo()</code> and <code>subsideinfo()</code> and therefore they have not been added independently to the docs. You can simply replace the <code>title</code> with the other function names for the same result.</p>
+</div>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-44-1">1</a></span>
+<span class="normal"><a href="#__codelineno-44-2">2</a></span>
+<span class="normal"><a href="#__codelineno-44-3">3</a></span>
+<span class="normal"><a href="#__codelineno-44-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="c1">-- White -&gt; Black subsideinfo for a specific user.</span>
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2"></a><span class="nf">subsideinfo</span><span class="p">(</span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Example Text&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">Color3</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="nv">Color3</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3"></a><span class="c1">-- Default title for all users.</span>
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4"></a><span class="nf">title</span><span class="p">(</span><span class="s2">&quot;Example Text&quot;</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h2 id="web">Web<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This is a small section for HTTP related functions.</p>
+</div>
+<hr />
+<h3 id="http"><code>http(url: string, [method: string = "get"], [headers: Table], [body: string], [compress: Enum.HttpCompression = Enum.HttpCompression.None])</code><a class="headerlink" href="#http" title="Permanent link">&para;</a></h3>
+<p>Performs an HTTP request with specified arguments. This is especially useful for connecting with external resources such as Discord. This is the equivalent of HttpService:RequestAsync() in Roblox Studio.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Dictionary</strong>: A dictionary (type of table) with various pieces of information.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-45-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-45-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-45-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-45-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-45-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-45-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-45-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-45-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-45-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-45-10">10</a></span>
+<span class="normal"><a href="#__codelineno-45-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="p">{</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;Success&quot;</span><span class="p">]:</span><span class="w"> </span><span class="nv">boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;StatusCode&quot;</span><span class="p">]:</span><span class="w"> </span><span class="nv">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;StatusMessage&quot;</span><span class="p">]:</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;Headers&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6"></a><span class="w">        </span><span class="p">[</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
+</span><span id="__span-45-7"><a id="__codelineno-45-7" name="__codelineno-45-7"></a><span class="w">        </span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Sun, 02 Nov 2025 00:43:49 GMT&quot;</span><span class="p">,</span>
+</span><span id="__span-45-8"><a id="__codelineno-45-8" name="__codelineno-45-8"></a><span class="w">        </span><span class="p">[</span><span class="s2">&quot;Server&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;nginx/1.18.0&quot;</span>
+</span><span id="__span-45-9"><a id="__codelineno-45-9" name="__codelineno-45-9"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-45-10"><a id="__codelineno-45-10" name="__codelineno-45-10"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;Body&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{&quot;</span><span class="nv">message</span><span class="s2">&quot;:&quot;</span><span class="nv">Hello</span><span class="w"> </span><span class="nv">World</span><span class="s2">&quot;,&quot;</span><span class="nv">id</span><span class="s2">&quot;:100}</span>
+</span><span id="__span-45-11"><a id="__codelineno-45-11" name="__codelineno-45-11"></a><span class="s2">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-46-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-46-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-46-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-46-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-46-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-46-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-46-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-46-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-46-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-46-10">10</a></span>
+<span class="normal"><a href="#__codelineno-46-11">11</a></span>
+<span class="normal"><a href="#__codelineno-46-12">12</a></span>
+<span class="normal"><a href="#__codelineno-46-13">13</a></span>
+<span class="normal"><a href="#__codelineno-46-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="c1">-- Example HTTP call with very basic arguments.</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">http</span><span class="p">(</span>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3"></a><span class="w">    </span><span class="s2">&quot;https://example.com/api/submit&quot;</span><span class="p">,</span>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4"></a><span class="w">    </span><span class="s2">&quot;post&quot;</span><span class="p">,</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-46-6"><a id="__codelineno-46-6" name="__codelineno-46-6"></a><span class="w">        </span><span class="p">[</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span>
+</span><span id="__span-46-7"><a id="__codelineno-46-7" name="__codelineno-46-7"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-46-8"><a id="__codelineno-46-8" name="__codelineno-46-8"></a><span class="w">    </span><span class="nf">jsonEncode</span><span class="p">({</span>
+</span><span id="__span-46-9"><a id="__codelineno-46-9" name="__codelineno-46-9"></a><span class="w">        </span><span class="nv">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;shotpaper7&quot;</span><span class="p">,</span>
+</span><span id="__span-46-10"><a id="__codelineno-46-10" name="__codelineno-46-10"></a><span class="w">        </span><span class="nv">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">67</span>
+</span><span id="__span-46-11"><a id="__codelineno-46-11" name="__codelineno-46-11"></a><span class="w">    </span><span class="p">})</span>
+</span><span id="__span-46-12"><a id="__codelineno-46-12" name="__codelineno-46-12"></a><span class="p">)</span>
+</span><span id="__span-46-13"><a id="__codelineno-46-13" name="__codelineno-46-13"></a><span class="c1">-- Converts the response into a json string and displays it.</span>
+</span><span id="__span-46-14"><a id="__codelineno-46-14" name="__codelineno-46-14"></a><span class="nf">announce</span><span class="p">(</span><span class="nf">jsonEncode</span><span class="p">(</span><span class="nv">response</span><span class="p">))</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="jsonEncode"><code>jsonEncode(content: Table)</code><a class="headerlink" href="#jsonEncode" title="Permanent link">&para;</a></h3>
+<p>This makes it easier to convert tables into strings, especially useful for debugging things and HTTP requests. This is the equivalent of HttpService:JSONEncode() in Roblox Studio.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>String</strong>: A JSON formatted string which is the equivalent to the provided table. Keys of dictionaries must be strings or numbers. A value of <code>nil</code> is NEVER generated.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-47-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-47-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-47-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-47-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-47-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-47-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-47-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-47-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-47-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-47-10">10</a></span>
+<span class="normal"><a href="#__codelineno-47-11">11</a></span>
+<span class="normal"><a href="#__codelineno-47-12">12</a></span>
+<span class="normal"><a href="#__codelineno-47-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1"></a><span class="p">{</span>
+</span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2"></a><span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+</span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-47-4"><a id="__codelineno-47-4" name="__codelineno-47-4"></a><span class="w">        </span><span class="nt">&quot;points&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span>
+</span><span id="__span-47-5"><a id="__codelineno-47-5" name="__codelineno-47-5"></a><span class="w">        </span><span class="nt">&quot;isLeader&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-47-6"><a id="__codelineno-47-6" name="__codelineno-47-6"></a><span class="w">        </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-47-7"><a id="__codelineno-47-7" name="__codelineno-47-7"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span>
+</span><span id="__span-47-8"><a id="__codelineno-47-8" name="__codelineno-47-8"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JohnDoe&quot;</span>
+</span><span id="__span-47-9"><a id="__codelineno-47-9" name="__codelineno-47-9"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-47-10"><a id="__codelineno-47-10" name="__codelineno-47-10"></a><span class="w">    </span><span class="nt">&quot;past_scores&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="mi">95</span><span class="p">],</span>
+</span><span id="__span-47-11"><a id="__codelineno-47-11" name="__codelineno-47-11"></a><span class="w">    </span><span class="nt">&quot;best_friend&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-47-12"><a id="__codelineno-47-12" name="__codelineno-47-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-47-13"><a id="__codelineno-47-13" name="__codelineno-47-13"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<p><div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-48-1">1</a></span>
+<span class="normal"><a href="#__codelineno-48-2">2</a></span>
+<span class="normal"><a href="#__codelineno-48-3">3</a></span>
+<span class="normal"><a href="#__codelineno-48-4">4</a></span>
+<span class="normal"><a href="#__codelineno-48-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="c1">-- Fetch a table, in this case an array of all usernames.</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">players</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">getPlayers</span><span class="p">()</span>
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3"></a><span class="c1">-- Display a message with a JSON formatted version of the table.</span>
+</span><span id="__span-48-4"><a id="__codelineno-48-4" name="__codelineno-48-4"></a><span class="nf">announce</span><span class="p">(</span><span class="nf">jsonEncode</span><span class="p">(</span><span class="nv">players</span><span class="p">))</span>
+</span><span id="__span-48-5"><a id="__codelineno-48-5" name="__codelineno-48-5"></a><span class="c1">-- This makes it much easier to understand and debug some functions or code.</span>
+</span></code></pre></div></td></tr></table></div>
+See <a href="#http">above</a> for another example, being used in a HTTP request.</p>
+</details>
+<hr />
+<h3 id="jsonDecode"><code>jsonDecode(json: string)</code><a class="headerlink" href="#jsonDecode" title="Permanent link">&para;</a></h3>
+<p>This allows you to convert JSON strings back into tables, especially useful for handling HTTP body contents in scripts. This is the equivalent of HttpService:JSONDecode() in Roblox Studio.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+<p><strong>Table</strong>: Table version of a JSON string. Empty JSON objects return a table of <code>{}</code>.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-49-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-49-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-49-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-49-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-49-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-49-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-49-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-49-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-49-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-49-10">10</a></span>
+<span class="normal"><a href="#__codelineno-49-11">11</a></span>
+<span class="normal"><a href="#__codelineno-49-12">12</a></span>
+<span class="normal"><a href="#__codelineno-49-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1"></a><span class="p">{</span>
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2"></a><span class="w">    </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3"></a><span class="w">    </span><span class="nv">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4"></a><span class="w">        </span><span class="nv">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+</span><span id="__span-49-5"><a id="__codelineno-49-5" name="__codelineno-49-5"></a><span class="w">        </span><span class="nv">isLeader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-49-6"><a id="__codelineno-49-6" name="__codelineno-49-6"></a><span class="w">        </span><span class="nv">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-49-7"><a id="__codelineno-49-7" name="__codelineno-49-7"></a><span class="w">            </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span>
+</span><span id="__span-49-8"><a id="__codelineno-49-8" name="__codelineno-49-8"></a><span class="w">            </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;JohnDoe&quot;</span>
+</span><span id="__span-49-9"><a id="__codelineno-49-9" name="__codelineno-49-9"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-49-10"><a id="__codelineno-49-10" name="__codelineno-49-10"></a><span class="w">        </span><span class="nv">past_scores</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">52</span><span class="p">,</span><span class="w"> </span><span class="mi">95</span><span class="p">},</span>
+</span><span id="__span-49-11"><a id="__codelineno-49-11" name="__codelineno-49-11"></a><span class="w">        </span><span class="nv">best_friend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">nil</span>
+</span><span id="__span-49-12"><a id="__codelineno-49-12" name="__codelineno-49-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-49-13"><a id="__codelineno-49-13" name="__codelineno-49-13"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+</details>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-50-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-50-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-50-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-50-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-50-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-50-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-50-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-50-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-50-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-50-10">10</a></span>
+<span class="normal"><a href="#__codelineno-50-11">11</a></span>
+<span class="normal"><a href="#__codelineno-50-12">12</a></span>
+<span class="normal"><a href="#__codelineno-50-13">13</a></span>
+<span class="normal"><a href="#__codelineno-50-14">14</a></span>
+<span class="normal"><a href="#__codelineno-50-15">15</a></span>
+<span class="normal"><a href="#__codelineno-50-16">16</a></span>
+<span class="normal"><a href="#__codelineno-50-17">17</a></span>
+<span class="normal"><a href="#__codelineno-50-18">18</a></span>
+<span class="normal"><a href="#__codelineno-50-19">19</a></span>
+<span class="normal"><a href="#__codelineno-50-20">20</a></span>
+<span class="normal"><a href="#__codelineno-50-21">21</a></span>
+<span class="normal"><a href="#__codelineno-50-22">22</a></span>
+<span class="normal"><a href="#__codelineno-50-23">23</a></span>
+<span class="normal"><a href="#__codelineno-50-24">24</a></span>
+<span class="normal"><a href="#__codelineno-50-25">25</a></span>
+<span class="normal"><a href="#__codelineno-50-26">26</a></span>
+<span class="normal"><a href="#__codelineno-50-27">27</a></span>
+<span class="normal"><a href="#__codelineno-50-28">28</a></span>
+<span class="normal"><a href="#__codelineno-50-29">29</a></span>
+<span class="normal"><a href="#__codelineno-50-30">30</a></span>
+<span class="normal"><a href="#__codelineno-50-31">31</a></span>
+<span class="normal"><a href="#__codelineno-50-32">32</a></span>
+<span class="normal"><a href="#__codelineno-50-33">33</a></span>
+<span class="normal"><a href="#__codelineno-50-34">34</a></span>
+<span class="normal"><a href="#__codelineno-50-35">35</a></span>
+<span class="normal"><a href="#__codelineno-50-36">36</a></span>
+<span class="normal"><a href="#__codelineno-50-37">37</a></span>
+<span class="normal"><a href="#__codelineno-50-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1"></a><span class="c1">-- Example JSON string, such as one received from a HTTP response body.</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">jsonString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">[[</span>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3"></a><span class="s">{</span>
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4"></a><span class="s">    &quot;message&quot;: &quot;success&quot;,</span>
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5"></a><span class="s">    &quot;info&quot;: {</span>
+</span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6"></a><span class="s">        &quot;points&quot;: 120,</span>
+</span><span id="__span-50-7"><a id="__codelineno-50-7" name="__codelineno-50-7"></a><span class="s">        &quot;isLeader&quot;: true,</span>
+</span><span id="__span-50-8"><a id="__codelineno-50-8" name="__codelineno-50-8"></a><span class="s">        &quot;user&quot;: {</span>
+</span><span id="__span-50-9"><a id="__codelineno-50-9" name="__codelineno-50-9"></a><span class="s">            &quot;id&quot;: 12345,</span>
+</span><span id="__span-50-10"><a id="__codelineno-50-10" name="__codelineno-50-10"></a><span class="s">            &quot;name&quot;: &quot;JohnDoe&quot;</span>
+</span><span id="__span-50-11"><a id="__codelineno-50-11" name="__codelineno-50-11"></a><span class="s">        },</span>
+</span><span id="__span-50-12"><a id="__codelineno-50-12" name="__codelineno-50-12"></a><span class="s">        &quot;past_scores&quot;: [50, 42, 95],</span>
+</span><span id="__span-50-13"><a id="__codelineno-50-13" name="__codelineno-50-13"></a><span class="s">        &quot;best_friend&quot;: null</span>
+</span><span id="__span-50-14"><a id="__codelineno-50-14" name="__codelineno-50-14"></a><span class="s">    }</span>
+</span><span id="__span-50-15"><a id="__codelineno-50-15" name="__codelineno-50-15"></a><span class="s">}</span>
+</span><span id="__span-50-16"><a id="__codelineno-50-16" name="__codelineno-50-16"></a><span class="s">]]</span>
+</span><span id="__span-50-17"><a id="__codelineno-50-17" name="__codelineno-50-17"></a><span class="c1">-- Convert JSON string to Lua.</span>
+</span><span id="__span-50-18"><a id="__codelineno-50-18" name="__codelineno-50-18"></a><span class="kd">local</span><span class="w"> </span><span class="nv">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">HttpService</span><span class="p">:</span><span class="nf">JSONDecode</span><span class="p">(</span><span class="nv">jsonString</span><span class="p">)</span>
+</span><span id="__span-50-19"><a id="__codelineno-50-19" name="__codelineno-50-19"></a>
+</span><span id="__span-50-20"><a id="__codelineno-50-20" name="__codelineno-50-20"></a><span class="c1">-- Initialise string for future reference:</span>
+</span><span id="__span-50-21"><a id="__codelineno-50-21" name="__codelineno-50-21"></a><span class="kd">local</span><span class="w"> </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-50-22"><a id="__codelineno-50-22" name="__codelineno-50-22"></a>
+</span><span id="__span-50-23"><a id="__codelineno-50-23" name="__codelineno-50-23"></a><span class="kr">if</span><span class="w"> </span><span class="nv">data</span><span class="p">.</span><span class="py">message</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-50-24"><a id="__codelineno-50-24" name="__codelineno-50-24"></a><span class="w">    </span><span class="c1">-- Since tab[&quot;hello&quot;] and tab.hello are equivalent,</span>
+</span><span id="__span-50-25"><a id="__codelineno-50-25" name="__codelineno-50-25"></a><span class="w">    </span><span class="c1">-- you could also use data[&quot;info&quot;][&quot;points&quot;] here:</span>
+</span><span id="__span-50-26"><a id="__codelineno-50-26" name="__codelineno-50-26"></a><span class="w">    </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">theString</span><span class="o">..</span><span class="p">(</span><span class="s2">&quot;I have &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">data</span><span class="p">.</span><span class="py">info</span><span class="p">.</span><span class="py">points</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; points&quot;</span><span class="p">)..</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span id="__span-50-27"><a id="__codelineno-50-27" name="__codelineno-50-27"></a><span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">data</span><span class="p">.</span><span class="py">info</span><span class="p">.</span><span class="py">isLeader</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-50-28"><a id="__codelineno-50-28" name="__codelineno-50-28"></a><span class="w">        </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">theString</span><span class="o">..</span><span class="p">(</span><span class="s2">&quot;I am the leader&quot;</span><span class="p">)..</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span id="__span-50-29"><a id="__codelineno-50-29" name="__codelineno-50-29"></a><span class="w">    </span><span class="kr">end</span>
+</span><span id="__span-50-30"><a id="__codelineno-50-30" name="__codelineno-50-30"></a><span class="w">    </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">theString</span><span class="o">..</span><span class="p">(</span><span class="s2">&quot;I have &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="o">#</span><span class="nv">data</span><span class="p">.</span><span class="py">info</span><span class="p">.</span><span class="py">past_scores</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; past scores&quot;</span><span class="p">)..</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span id="__span-50-31"><a id="__codelineno-50-31" name="__codelineno-50-31"></a>
+</span><span id="__span-50-32"><a id="__codelineno-50-32" name="__codelineno-50-32"></a><span class="w">    </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">theString</span><span class="o">..</span><span class="p">(</span><span class="s2">&quot;All the information:&quot;</span><span class="p">)..</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span id="__span-50-33"><a id="__codelineno-50-33" name="__codelineno-50-33"></a><span class="w">    </span><span class="kr">for</span><span class="w"> </span><span class="nv">key</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">pairs</span><span class="p">(</span><span class="nv">data</span><span class="p">.</span><span class="py">info</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-50-34"><a id="__codelineno-50-34" name="__codelineno-50-34"></a><span class="w">        </span><span class="nv">theString</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">theString</span><span class="o">..</span><span class="p">(</span><span class="nv">key</span><span class="p">,</span><span class="w"> </span><span class="nf">typeof</span><span class="p">(</span><span class="nv">value</span><span class="p">),</span><span class="w"> </span><span class="nv">value</span><span class="p">)..</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span id="__span-50-35"><a id="__codelineno-50-35" name="__codelineno-50-35"></a><span class="w">    </span><span class="kr">end</span>
+</span><span id="__span-50-36"><a id="__codelineno-50-36" name="__codelineno-50-36"></a>
+</span><span id="__span-50-37"><a id="__codelineno-50-37" name="__codelineno-50-37"></a><span class="w">    </span><span class="nf">announce</span><span class="p">(</span><span class="nv">theString</span><span class="p">)</span>
+</span><span id="__span-50-38"><a id="__codelineno-50-38" name="__codelineno-50-38"></a><span class="kr">end</span>
+</span></code></pre></div></td></tr></table></div>
+<h6 id="admittedly-this-is-bad-practice-with-the-string-fight-me">(admittedly this is bad practice with the string, fight me.)<a class="headerlink" href="#admittedly-this-is-bad-practice-with-the-string-fight-me" title="Permanent link">&para;</a></h6>
+</details>
+<hr />
+<h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>This section contains functions which were deemed not to fit into other categories.</p>
+</div>
+<hr />
+<h3 id="tween"><code>tween(instance: Instance, tweenInfo: TweenInfo, propertyTable: table)</code> <span class="twemoji no-return" title="This function returns nothing, therefore any attempts to get a return will give nil."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.42L5.83 13H21V7z"/></svg></span><a class="headerlink" href="#tween" title="Permanent link">&para;</a></h3>
+<p>This is a simple handler to help you gradually move one thing to another, e.g. a part's position.
+For more information on tweens, I HEAVILY recommend you look at some YouTube tutorials and this <a href="https://create.roblox.com/docs/reference/engine/classes/TweenService#Create">Roblox Engine API Documentation</a>.</p>
+<details class="example" open="open">
+<summary>Example Usage:</summary>
+<div class="language-lua highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-51-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-51-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-51-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-51-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-51-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-51-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-51-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-51-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-51-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-51-10">10</a></span>
+<span class="normal"><a href="#__codelineno-51-11">11</a></span>
+<span class="normal"><a href="#__codelineno-51-12">12</a></span>
+<span class="normal"><a href="#__codelineno-51-13">13</a></span>
+<span class="normal"><a href="#__codelineno-51-14">14</a></span>
+<span class="normal"><a href="#__codelineno-51-15">15</a></span>
+<span class="normal"><a href="#__codelineno-51-16">16</a></span>
+<span class="normal"><a href="#__codelineno-51-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="s2">&quot;ExamplePart&quot;</span><span class="p">)</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2"></a>
+</span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">goal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4"></a><span class="w">    </span><span class="nv">Position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+</span><span id="__span-51-5"><a id="__codelineno-51-5" name="__codelineno-51-5"></a><span class="w">    </span><span class="nv">Color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Color3</span><span class="p">.</span><span class="nf">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-51-6"><a id="__codelineno-51-6" name="__codelineno-51-6"></a><span class="p">}</span>
+</span><span id="__span-51-7"><a id="__codelineno-51-7" name="__codelineno-51-7"></a>
+</span><span id="__span-51-8"><a id="__codelineno-51-8" name="__codelineno-51-8"></a><span class="kd">local</span><span class="w"> </span><span class="nv">tweenInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">TweenInfo</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span>
+</span><span id="__span-51-9"><a id="__codelineno-51-9" name="__codelineno-51-9"></a><span class="w">    </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="c1">-- time</span>
+</span><span id="__span-51-10"><a id="__codelineno-51-10" name="__codelineno-51-10"></a><span class="w">    </span><span class="nv">Enum</span><span class="p">.</span><span class="py">EasingStyle</span><span class="p">.</span><span class="py">Sine</span><span class="p">,</span><span class="w"> </span><span class="c1">-- easing style (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)</span>
+</span><span id="__span-51-11"><a id="__codelineno-51-11" name="__codelineno-51-11"></a><span class="w">    </span><span class="nv">Enum</span><span class="p">.</span><span class="py">EasingDirection</span><span class="p">.</span><span class="py">InOut</span><span class="w"> </span><span class="c1">-- easing direction (UPON TESTING THIS DID NOT WORK. PLEASE UPDATE US IF YOU CAN!)</span>
+</span><span id="__span-51-12"><a id="__codelineno-51-12" name="__codelineno-51-12"></a><span class="w">    </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="c1">-- repeat count, set as -1 for infinite repetition.</span>
+</span><span id="__span-51-13"><a id="__codelineno-51-13" name="__codelineno-51-13"></a><span class="w">    </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="c1">-- reverses, false is recommended.</span>
+</span><span id="__span-51-14"><a id="__codelineno-51-14" name="__codelineno-51-14"></a><span class="w">    </span><span class="mi">0</span><span class="w"> </span><span class="c1">-- delay time, 0 will likely give you the results you intend.</span>
+</span><span id="__span-51-15"><a id="__codelineno-51-15" name="__codelineno-51-15"></a><span class="p">)</span>
+</span><span id="__span-51-16"><a id="__codelineno-51-16" name="__codelineno-51-16"></a>
+</span><span id="__span-51-17"><a id="__codelineno-51-17" name="__codelineno-51-17"></a><span class="nf">tween</span><span class="p">(</span><span class="nv">part</span><span class="p">,</span><span class="w"> </span><span class="nv">tweenInfo</span><span class="p">,</span><span class="w"> </span><span class="nv">goal</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 id="raycast"><code>raycast(origin: Vector3, target: Vector3, params: RaycastParams)</code><a class="headerlink" href="#raycast" title="Permanent link">&para;</a></h3>
+<p>This is a relatively advanced function for sending a beam between 2 positions and determining if it collides with anything.
+For more information on raycasts, I HEAVILY recommend you look at some Youtube tutorials and this <a href="https://create.roblox.com/docs/workspace/raycasting">Roblox Engine API Documentation</a>.</p>
+<details class="info" open="open">
+<summary>Returns:</summary>
+</details>
+<hr />
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>Body</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This documentation is made by members of The Aquifer. You can join the server on the right!
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://discord.gg/cjHvAwGQY5" target="_blank" rel="noopener" title="The Aquifer" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "toc.follow", "navigation.top", "navigation.instant", "content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

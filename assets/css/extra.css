@@ -1,0 +1,57 @@
+:root  > * {
+  --md-primary-fg-color:                #017f7e;
+  --md-primary-fg-color--light:         #017f7e;
+  --md-primary-fg-color--dark:          #017f7e;
+
+  --md-accent-fg-color:                 #01ffff;
+  --md-accent-fg-color--transparent:    #01ffff19;
+}
+
+.md-tooltip, .md-tooltip__inner {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 6px 10px;
+}
+
+.requires-ssuh {
+    color: #dda900;
+    cursor: help;
+}
+
+.requires-ssuh:hover {
+    filter: brightness(1.2);
+    text-shadow: 0 0 6px #a60;
+}
+
+.incomplete {
+    color: #7e57c2;
+    cursor: help;
+    transition: all 0.2s ease;
+}
+
+.incomplete:hover {
+    color: #b388ff;
+    transform: scale(1.25);
+}
+
+.no-return {
+    color: #00BFFF;
+    cursor: help;
+    transition: all 0.2s ease;
+}
+
+.no-return:hover {
+    color: #46d1ff;
+    transform: scale(1.25);
+}
+
+.buggy {
+    color: #DF9300;
+    cursor: help;
+    transition: all 0.2s ease;
+}
+
+.buggy:hover {
+    color: #FFBF08;
+    transform: scale(1.25);
+}
